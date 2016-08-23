@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-gb">
+{% include head.html %}
+	<body>
+		{% include navigation.html %}
+		<div class="title">
+			{% if page.title == "Home" %}
+			 <img class="logo" src='data:image/svg+xml;utf8,{% include images/logo.svg %}' alt="LifeStack.io">
+			{% elsif page.title %}
+				<h1>{{ page.title }}</h1>
+				{% if page.date %}
+					<div class="date">{{ page.date | date_to_string }}</div>
+				{% endif %}
+				{% if page.layout == "post" %}
+					<div><a href="{{ site.baseurl }}all/{{ page.category | slugify }}">{{ page.category | downcase }}</a>
+					{% capture word_count %}
+  					{{ page.content | number_of_words | minus: site.read_speed }}
+					{% endcapture %}
+					{% unless word_count contains "-" %}
+						{% capture reading_time %}
+							{{ word_count | plus: site.read_speed | divided_by: site.read_speed | floor }}
+						{% endcapture %}
+						|&nbsp</span><span class="time_to_read">{{reading_time | append: " minute read" }}</span>
+					{% else %}
+						</span>
+					{% endunless %}
+					</div>
+				{% endif %}
+			{% elsif page.category %}
+				<h1>{{ site.data.meta[page.category].name }}</h1>
+			{% endif %}
+		</div>
+		<div class="content">
+			{{ content }}
+		</div>
+		{% if site.analytics.enable %}{% include analytics.html %}{% endif %}
+  </body>
+</html>

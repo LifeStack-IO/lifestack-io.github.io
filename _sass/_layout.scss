@@ -1,0 +1,78 @@
+// == Two Column Default Layout == //
+body {
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: $max-width;
+	position: relative;
+	& > * {
+		margin-left: $sub-navigation-width + (2 * $gutter-navigation-width);
+		margin-right: $gutter-navigation-width;
+	}
+}
+
+.content, .date, blockquote, .title, #markdown-toc, figure pre {display: block;}
+.content {padding: 0.5rem 0 3rem 0;}
+
+figure pre {
+	margin: 0;
+	padding: 1rem;
+	white-space: pre;
+}
+
+.highlighter-rouge > .highlight > code, h6, #markdown-toc {
+	float: left;
+	position: absolute;
+	margin-left: 0;
+	margin-bottom: 1rem;
+}
+
+.highlighter-rouge > .highlight > code, h6, #markdown-toc  {
+	-webkit-transform: translateX(0 - $sub-navigation-width - $gutter-navigation-width);
+	-ms-transform: translateX(0 - $sub-navigation-width - $gutter-navigation-width);
+	transform: translateX(0 - $sub-navigation-width - $gutter-navigation-width);
+	width: $sub-navigation-width;
+	text-align: right;
+	padding: 0;
+	clear: both;
+	ul {padding: 0 0 0.4em 0;}
+	li {padding: 0 0 0.2em 0;}
+}
+
+.title .date {float: right;}
+
+#markdown-toc {
+	margin: 1rem 0;
+	padding-top: 0.5rem;
+}
+// == Two Column Default Layout == //
+
+
+// == One Column Small Layout == //
+@media all and (unquote($one-column)) {
+	body > * {margin: 0.5rem 1rem;}
+	.title {
+			margin-left: $navigation-toggle-width * 2;
+			padding: 0.3rem 0;
+		}
+	.content {padding: 0;}
+	h6, .highlighter-rouge > .highlight > code, #markdown-toc {
+		position: inherit;
+		text-align: left;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		margin-bottom: 0.4rem;
+	}
+	h6, #markdown-toc {float: inherit;}
+	.highlighter-rouge > .highlight > code {width: 90%; padding: 0.5rem;}
+	#markdown-toc {
+		margin: 1.5rem 0;
+		width: 100%;
+		li, ul {padding: 0.25rem 0;}
+	}
+	pre code {white-space: pre-wrap;}
+	blockquote {text-align: center;}
+}
+// == One Column Small Layout == //

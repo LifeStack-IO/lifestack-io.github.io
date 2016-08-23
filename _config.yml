@@ -1,0 +1,74 @@
+# Global
+safe:									true
+exclude:							[README.md, LICENSE.md, TODO.md, CNAME]
+include:							[_categories, _indexes, _pages]
+timezone:							Europe/London
+
+# Dependencies
+markdown:							kramdown
+highlighter:					rouge
+
+# Markdown Processing
+kramdown:
+  auto_ids:						true
+  entity_output:			as_char
+  toc_levels:					1..3
+  smart_quotes:				lsquo,rsquo,ldquo,rdquo
+  input:							GFM
+  hard_wrap:					false
+  footnote_nr:				1
+  footnote_backlink:	▲
+
+# Styling
+sass:
+  sass_dir:						_sass
+  style:							compressed
+
+# Compression
+compress_html:
+  comments:						all
+  clippings:					all
+
+# Permalinks
+permalink:						pretty
+
+# Setup
+title:								"LifeStack"
+byline:								"Training"
+  
+description:					"Training"
+url:									lifestack.io
+baseurl:							/
+author:
+  name:								"LifeStack.io"
+  url:								https://github.com/LifeStack-IO
+
+# Collections
+collections:
+  links:
+    output: true
+    permalink: /:collection/:path/
+    title: Useful Links
+  tools:
+    output: true
+    permalink: /:collection/:path/
+    title: Tools & Apps
+    
+# Custom variables
+version:							"1.0.5"
+read_speed:						140
+launched:							"2014"
+
+# Extras
+analytics:
+  enable:							false
+  id:									"UA-53673057-1"
+
+github:
+  repo:								https://github.com/LifeStack-IO/
+  baseurl:						https://github.com/LifeStack-IO/lifestack-io.github.io/tree/master/
+
+social:
+  web:								http://lifestack.io
+  twitter:						https://twitter.com/LifeStack_IO
+  github:							https://github.com/LifeStack-IO

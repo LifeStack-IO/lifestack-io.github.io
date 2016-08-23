@@ -1,0 +1,201 @@
+// -- Regular Elements -- //
+p {margin: 0.5em 0;}
+
+figure {
+	margin: 0;
+	overflow: auto;
+	word-wrap: none;
+}
+
+ul, ol {list-style-type: none;}
+ol {counter-reset: item;}
+ul li, ol li {
+  position: relative;
+	display: block;
+	margin-left: 1em;
+	> p {margin: 0.3rem 0;}
+}
+ul li:before, ol li:before {
+	position: absolute;
+	left: -1em;
+	color: $colour-highlight;
+}
+ol li:before {
+	content: counter(item) ".";
+	counter-increment: item;
+}
+ul li:before {content: "►";}
+
+hr {
+	margin: 0.5rem 0;
+	padding: 0;
+	border: none;
+	text-align: center;
+	height: 1px;
+	background: $colour-highlight;
+	background-image: linear-gradient(to right, rgba($colour-background, 1), rgba($colour-background, 0.8), rgba($colour-highlight, 1), rgba($colour-background, 0.8), rgba($colour-background, 1));
+	&:after {
+		content: "◄ ♥ ►";
+		display: inline-block;
+		position: relative;
+		top: -0.6em;
+		padding: 0 0.3em;
+		color: $colour-highlight;
+		background: $colour-background;
+	}
+}
+
+blockquote {
+	&:before {
+		color: $colour-general-light;
+		font-size: 4rem;
+		float: left;
+		content: "“";
+		line-height: 1rem;
+	}
+}
+// -- Regular Elements -- //
+
+
+// -- Specific Classes -- //
+.logo {width: 8rem;}
+
+.content {
+	a {-webkit-tap-highlight-color: $colour-highlight-light;}
+	> p {margin-bottom: 1em;}
+	p a:hover, ul a:hover {
+		-webkit-transition: color,background-color $transition-normal;
+		-moz-transition: color,background-color $transition-normal;
+		transition: color,background-color $transition-normal;
+		background-color: $colour-highlight-light;
+		color: $colour-highlight;
+	}
+	#markdown-toc a:hover {
+		-webkit-transition: color $transition-normal;
+		-moz-transition: color $transition-normal;
+		transition: color $transition-normal;
+		color: $colour-highlight;
+		background: inherit;
+	}	
+	> p {
+		&:first-of-type { 
+			margin-bottom: 1.5rem;
+			&:first-letter {
+				float: left;
+				font-family: $font-highlight;
+				font-style: normal;
+				background-color: $colour-emphasis;
+				color: $colour-background;
+				margin: 0 0.3rem 0 0;
+				font-size: 1.8rem;
+				line-height: 1.2rem;
+				padding: 0.4rem;
+			}
+			&:first-line {font-weight: bold; font-variant: small-caps; font-size: 110%; line-height: 80%;}
+		}
+	}
+	> table {
+		margin-top: 1rem;
+		margin-bottom: 1.5rem;
+		border-collapse: collapse;
+		width: 95%;
+		tr + tr {border-top: 0.05em solid $colour-general-light;}
+		td + td {border-left: 0.05em solid $colour-general-light;}
+		th {
+			text-transform: uppercase;
+			padding: 0.3rem 0.5rem;
+		}
+		td {padding: 0.4em;}
+	}
+	h5 {
+		color: $colour-general-dark;
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 0.4em;
+		border-bottom: 0.2em double $colour-general-light;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+}
+
+#markdown-toc {
+	li {list-style-type: none;}
+	li:before {content: "";}
+	border-top: solid 0.1rem $colour-general;
+}
+
+.finally {
+	svg {float: right;}
+	p {
+		&:first {
+			a {background-color: red;}
+		}
+	}
+}
+
+.icon {
+	margin-left: 1rem;
+	height: 1rem;
+	width: 1rem;
+	path {
+		fill: $colour-general-dark;
+	}
+	&:hover {
+		path {
+			-webkit-transition: fill $transition-normal;
+			-moz-transition: fill $transition-normal;
+			transition: fill $transition-normal;
+			fill: $colour-highlight;
+		}
+	}
+}
+
+.date, .time_to_read {
+	background-repeat: no-repeat;
+	background-size: 0.8rem auto;
+	background-position: left center;
+	padding-left: 1rem;
+}
+.date {
+	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" viewBox="0.0 0.0 100.0 100.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="p.0"><path d="m0 0l100.0 0l0 100.0l-100.0 0l0 -100.0z" clip-rule="nonzero"></path></clipPath><g clip-path="url(#p.0)"><path fill="#000000" fill-opacity="0.0" d="m0 0l100.0 0l0 100.0l-100.0 0z" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m7.2125983 50.0l0 0c0 -23.630829 19.156572 -42.787403 42.787403 -42.787403l0 0c11.347923 0 22.231064 4.5079455 30.255264 12.532139c8.024193 8.024195 12.532135 18.90734 12.532135 30.255262l0 0c0 23.630829 -19.15657 42.7874 -42.7874 42.7874l0 0c-23.630829 0 -42.787403 -19.15657 -42.787403 -42.7874z" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="12.0" stroke-linejoin="round" stroke-linecap="butt" d="m7.2125983 50.0l0 0c0 -23.630829 19.156572 -42.787403 42.787403 -42.787403l0 0c11.347923 0 22.231064 4.5079455 30.255264 12.532139c8.024193 8.024195 12.532135 18.90734 12.532135 30.255262l0 0c0 23.630829 -19.15657 42.7874 -42.7874 42.7874l0 0c-23.630829 0 -42.787403 -19.15657 -42.787403 -42.7874z" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m49.874016 24.75328l0 27.464565" fill-rule="nonzero"></path><path stroke="#999999" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="round" d="m49.874016 24.75328l0 27.464565" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m67.43044 42.06824l-17.543304 10.141731" fill-rule="nonzero"></path><path stroke="#999999" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="round" d="m67.43044 42.06824l-17.543304 10.141731" fill-rule="nonzero"></path></g></svg>'), none;
+}
+.time_to_read {
+	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" viewBox="0.0 0.0 100.0 100.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="p.0"><path d="m0 0l100.0 0l0 100.0l-100.0 0l0 -100.0z" clip-rule="nonzero"></path></clipPath><g clip-path="url(#p.0)"><path fill="#000000" fill-opacity="0.0" d="m0 0l100.0 0l0 100.0l-100.0 0z" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m50.0 26.75654l0 67.90551" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="butt" d="m50.0 26.75654l0 67.90551" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m95.07612 11.082592l0 67.90552" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="butt" d="m95.07612 11.082592l0 67.90552" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m4.92126 11.082592l0 67.90552" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="butt" d="m4.92126 11.082592l0 67.90552" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m50.0 26.927029c1.4370079 -1.2216854 4.5166245 -5.0705338 8.622047 -7.3301105c4.105423 -2.2595787 10.961067 -4.8434963 16.010498 -6.227352c5.049431 -1.3838558 10.87883 -1.7067223 14.286087 -2.0757837c3.4072647 -0.36906052 5.131233 -0.11548519 6.157486 -0.13858223" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="round" d="m50.0 26.927029c1.4370079 -1.2216854 4.5166245 -5.0705338 8.622047 -7.3301105c4.105423 -2.2595787 10.961067 -4.8434963 16.010498 -6.227352c5.049431 -1.3838558 10.87883 -1.7067223 14.286087 -2.0757837c3.4072647 -0.36906052 5.131233 -0.11548519 6.157486 -0.13858223" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m50.0 94.8268c1.4370079 -1.2216873 4.5166245 -5.0705338 8.622047 -7.3301086c4.105423 -2.2595825 10.961067 -4.843498 16.010498 -6.227356c5.049431 -1.3838577 10.87883 -1.7067184 14.286087 -2.0757828c3.4072647 -0.3690567 5.131233 -0.115486145 6.157486 -0.13858032" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="round" d="m50.0 94.8268c1.4370079 -1.2216873 4.5166245 -5.0705338 8.622047 -7.3301086c4.105423 -2.2595825 10.961067 -4.843498 16.010498 -6.227356c5.049431 -1.3838577 10.87883 -1.7067184 14.286087 -2.0757828c3.4072647 -0.3690567 5.131233 -0.115486145 6.157486 -0.13858032" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m50.0 26.927029c-1.4370079 -1.2216854 -4.5166245 -5.0705338 -8.622047 -7.3301105c-4.105423 -2.2595787 -10.961067 -4.8434963 -16.010498 -6.227352c-5.049431 -1.3838558 -10.878828 -1.7067223 -14.28609 -2.0757837c-3.4072614 -0.36906052 -5.131233 -0.11548519 -6.1574802 -0.13858223" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="round" d="m50.0 26.927029c-1.4370079 -1.2216854 -4.5166245 -5.0705338 -8.622047 -7.3301105c-4.105423 -2.2595787 -10.961067 -4.8434963 -16.010498 -6.227352c-5.049431 -1.3838558 -10.878828 -1.7067223 -14.28609 -2.0757837c-3.4072614 -0.36906052 -5.131233 -0.11548519 -6.1574802 -0.13858223" fill-rule="nonzero"></path><path fill="#000000" fill-opacity="0.0" d="m50.0 94.8268c-1.4370079 -1.2216873 -4.5166245 -5.0705338 -8.622047 -7.3301086c-4.105423 -2.2595825 -10.961067 -4.843498 -16.010498 -6.227356c-5.049431 -1.3838577 -10.878828 -1.7067184 -14.28609 -2.0757828c-3.4072614 -0.3690567 -5.131233 -0.115486145 -6.1574802 -0.13858032" fill-rule="nonzero"></path><path stroke="#b7b7b7" stroke-width="8.0" stroke-linejoin="round" stroke-linecap="round" d="m50.0 94.8268c-1.4370079 -1.2216873 -4.5166245 -5.0705338 -8.622047 -7.3301086c-4.105423 -2.2595825 -10.961067 -4.843498 -16.010498 -6.227356c-5.049431 -1.3838577 -10.878828 -1.7067184 -14.28609 -2.0757828c-3.4072614 -0.3690567 -5.131233 -0.115486145 -6.1574802 -0.13858032" fill-rule="nonzero"></path></g></svg>'), none;
+}
+
+.highlighter-rouge pre {
+		white-space: pre-wrap !important;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+// -- Specific Classes -- //
+
+
+// == One Column Small Layout == //
+@media all and (unquote($one-column)) {
+	.highlighter-rouge > .highlight > code {
+		border: 0.1em solid $colour-general-light;
+		border-left: 0.4em solid $colour-general-light;
+	}	
+	.icon {
+		margin-right: 1rem;
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+	blockquote { &:before {content: "";}}
+}
+// == One Column Small Layout == //
+
+
+// == Regular Sized Layout == //
+@media (unquote($breakpoint-regular)) {
+	// This switches ON wrapping once the viewport gets to a reasonable size
+	pre {
+		white-space: pre-wrap !important;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+	// This switches OFF wrapping when line numbers are displayed (doesn't work)
+	td pre {white-space: pre !important;}
+}
+// == Regular Sized Layout == //

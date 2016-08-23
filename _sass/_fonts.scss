@@ -1,0 +1,106 @@
+.foo {content: "bar";}
+
+html {
+	font-family: $font-general;
+  font-weight: $font-weight;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-kerning: normal;
+}
+
+body {	
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  & > * {font-size: 100%;}
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: $font-weight-heading;
+  margin: 0.6em 0 0.2em 0;
+}
+
+p {letter-spacing: 0.02rem;}
+a {text-decoration: none; color: inherit;}
+sub, sup {
+	font-size: 70%;
+	padding-left: 0.2em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+}
+sub {top: 0.5em;}
+.footnotes sup {margin-left: -0.5em;}
+
+pre, code {color: $colour-general-dark;}
+pre, code, blockquote {font-family: $font-code;}
+figure code pre, figure pre code {
+  font-size: 80% !important;
+	line-height: 1.2 !important;
+};
+
+strong {font-weight: $font-weight-heading;}
+.content {
+	p a, li a {text-transform: lowercase; font-variant: small-caps; font-size: 106%; padding: 0 0.1em 0 0.1em;}
+	#markdown-toc {
+  	font-family: $font-heading;
+  	font-size: 90%;
+		word-break: keep-all;
+  	li {
+			ul {font-size: 90%;}
+			a {font-weight: $font-weight; font-variant: initial;}
+		}
+	}
+}
+h6, .highlighter-rouge > .highlight > code {font-size: 75%; color: $colour-general; word-break: keep-all;};
+h5 {font-size: 105%};
+h4 {font-size: 110%};
+h3 {font-size: 115%};
+h2 {font-size: 125%};
+h1 {font-size: 140%};
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a {&:hover {color: $colour-highlight;}};
+h1, h2, h3, h4, h5, h6 {&:target {text-decoration: underline;}}
+
+@media all and (unquote($one-column)) {
+	#markdown-toc {
+		font-size: 100%;
+		li {ul {font-size: 100%;}}
+	}
+	.finally {
+		font-size: 120%;
+		line-height: $line-height * $line-height;
+	}
+}
+
+.title, .finally {
+	font-size: 90%;
+	font-family: $font-heading;
+	strong {color: $colour-highlight;}
+	h1, h2, h3, h4, h5, h6 {font-family: $font-highlight; color: $colour-highlight; font-weight: $font-weight; font-size: 180%;}
+	.date, .time_to_read {
+  	font-size: 90%;
+		text-decoration: uppercase;
+		color: $colour-general;
+	}
+}
+
+// == Responsive Font Sizing == //
+// Weirdly, SASS likes MQ sizes to be multiplied by integers but font sizes by EMs //
+@media all {html {font-size: $font-base + $font-step * 8em; line-height: $line-height;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 8) {html {font-size: $font-base + $font-step * 8em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 7) {html {font-size: $font-base + $font-step * 7em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 6) {html {font-size: $font-base + $font-step * 6em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 5) {html {font-size: $font-base + $font-step * 5em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 4) {html {font-size: $font-base + $font-step * 4em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 3) {html {font-size: $font-base + $font-step * 3em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 2) {html {font-size: $font-base + $font-step * 2em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step * 1) {html {font-size: $font-base + $font-step * 1em;}}
+@media all and (max-width: $font-mq-base + $font-mq-step) {html {font-size: $font-base;}}
+/*
+@media all and (max-width: $font-mq-base - $font-mq-step * 1) {html {font-size: $font-base - $font-step * 1em;}}
+@media all and (max-width: $font-mq-base - $font-mq-step * 2) {html {font-size: $font-base - $font-step * 2em;}}
+@media all and (max-width: $font-mq-base - $font-mq-step * 3) {html {font-size: $font-base - $font-step * 3em;}}
+@media all and (max-width: $font-mq-base - $font-mq-step * 4) {html {font-size: $font-base - $font-step * 4em;}}
+*/

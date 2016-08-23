@@ -1,0 +1,154 @@
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="{{ site.description }}">	
+		
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+		<title>
+			{% if page.title == "Home" %}
+				{{ site.title }} &middot; {{ site.byline }}
+			{% elsif page.title %}
+				{{ site.title }} &middot; {{ page.title }}
+			{% elsif page.category %}
+				{{ site.title }} &middot; {{ site.data.meta[page.category].name }}
+			{% else %}
+				{{ site.title }}
+			{% endif %}
+		</title>
+
+		<!-- CSS -->
+		<style type="text/css">{% capture include_to_scssify %}{% include style.scss %}{% endcapture %}{{ include_to_scssify | scssify }}</style>
+		
+		<!-- Async CSS -->
+		<link rel="preload" href="//fonts.googleapis.com/css?family=Baumans|Crimson+Text:400,400i,700,700i|Inconsolata:400,700|Raleway:400,700" as="style" onload="this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Baumans|Crimson+Text:400,400i,700,700i|Inconsolata:400,700|Raleway:400,700"></noscript>
+		<!-- Script from: https://github.com/filamentgroup/loadCSS Licence = The MIT License (MIT) | Copyright (c) 2014 Filament Group -->
+		<script>
+			(function(w){
+				"use strict";
+				var loadCSS = function( href, before, media ){
+					var doc = w.document;
+					var ss = doc.createElement( "link" );
+					var ref;
+					if( before ){
+						ref = before;
+					}
+					else {
+						var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+						ref = refs[ refs.length - 1];
+					}
+
+					var sheets = doc.styleSheets;
+					ss.rel = "stylesheet";
+					ss.href = href;
+					ss.media = "only x";
+
+					function ready( cb ){
+						if( doc.body ){
+							return cb();
+						}
+						setTimeout(function(){
+							ready( cb );
+						});
+					}
+
+					ready( function(){
+						ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+					});
+
+					var onloadcssdefined = function( cb ){
+						var resolvedHref = ss.href;
+						var i = sheets.length;
+						while( i-- ){
+							if( sheets[ i ].href === resolvedHref ){
+								return cb();
+							}
+						}
+						setTimeout(function() {
+							onloadcssdefined( cb );
+						});
+					};
+
+					function loadCB(){
+						if( ss.addEventListener ){
+							ss.removeEventListener( "load", loadCB );
+						}
+						ss.media = media || "all";
+					}
+
+					if( ss.addEventListener ){
+						ss.addEventListener( "load", loadCB);
+					}
+					ss.onloadcssdefined = onloadcssdefined;
+					onloadcssdefined( loadCB );
+					return ss;
+				};
+				if( typeof exports !== "undefined" ){
+					exports.loadCSS = loadCSS;
+				}
+				else {
+					w.loadCSS = loadCSS;
+				}
+			}( typeof global !== "undefined" ? global : this ));
+
+			(function( w ){
+
+				if( !w.loadCSS ){
+					return;
+				}
+				var rp = loadCSS.relpreload = {};
+				rp.support = function(){
+					try {
+						return w.document.createElement("link").relList.supports( "preload" );
+					} catch (e) {}
+				};
+
+				rp.poly = function(){
+					var links = w.document.getElementsByTagName( "link" );
+					for( var i = 0; i < links.length; i++ ){
+						var link = links[ i ];
+						if( link.rel === "preload" && (link.getAttribute( "as" ) === "style" | link.getAttribute( "as" ) === "stylesheet" )){
+							w.loadCSS( link.href, link );
+							link.rel = null;
+						}
+					}
+				};
+
+				if( !rp.support() ){
+					rp.poly();
+					var run = w.setInterval( rp.poly, 300 );
+					if( w.addEventListener ){
+						w.addEventListener( "load", function(){
+							w.clearInterval( run );
+						} )
+					}
+				}
+			}( this ));
+		</script>
+		
+		<!-- Icons -->
+		<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAt7e3AP///wcmJiaUFhYW07KysnFMTEwdFRUVAWFhYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUVFRjOTk59HNzc//Gxsb6Tk5O0be3t4AUFBQrAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAASEhIAAAAAABjY2NHSEhI5hYWFv+Hh4f/9/f3/8PDw/+9vb3/HBwczAAAABcFBQUAAAAAAAAAAAAAAAAAAAAAAAQEBAAAAAATe3t7yH19ff8AAAD/MTEx/+jo6P//////+Pj4/6Ojo90pKSkcNTU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHyYmJuBsbGz/AAAA+gQEBPmhoaH//////+bm5v9QUFDdAAAAHAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8bGxvhZWVl/gICAooAAABST09PxM3Nzf5ycnL/AQEB3QAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfGRkZ4YGBgad7e3sYPDw8WhQUFNU8PDziERERogAAALwAAAAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAYGBqcVFRVajo6OrHt7e/h6enr/Pz8/9gAAAGIAAAAXAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsMDAxADg4O1nl5ef/U1NT/cXFx/gUFBf8AAADIAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2trYAtbW1K76+vurf39//pqam/woKCv8AAAD+AAAA5QAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODg4ADc3Nyk+Pj7pm5ub/3Z2dv8AAADuBwcH4wICAuUAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAATExMoGRkZ6D8/P/9ra2v/ODg47B0dHd0fHx+JAAAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAAFBQUJyoqKuWmpqb/8/Pz/9TU1P9FRUX2PT09Pzs7OwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzAA8PDwxqamq67u7u////////////lpaW9jw8PD87OzsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOLi4gDX19cDTExMrMrKyv//////8fHx/2NjY/Y7Ozs/Ozs7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADi4uIA////AyAgIKw2Njb/hoaG/1paWv8RERH2RUVFPzs7OwAAAAAAAAAAAAAAAAAAAAAA+B8AAPAHAADwBwAA4AcAAOAHAADgBwAA4AcAAOAHAADgDwAA8A8AAPAPAADwDwAA8B8AAPAfAADwHwAA8B8AAA==" rel="shortcut icon" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}ico/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}ico/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}ico/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}ico/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}ico/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}ico/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}ico/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}ico/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}ico/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}ico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}ico/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}ico/favicon-16x16.png">
+		<link rel="manifest" href="{{ site.baseurl }}ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="{{ site.baseurl }}ico/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}feed.xml">
+		
+	</head>

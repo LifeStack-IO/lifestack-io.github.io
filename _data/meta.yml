@@ -1,0 +1,49 @@
+article:
+  name: Articles
+  description: Articles about how to do things
+  lead_image: images/article_leader.svg
+  image: images/article_header.svg
+
+tutorial:
+  name: Tutorials
+  description: Step-by-step guides to making things happen
+  lead_image: images/tutorial_leader.svg
+  image: images/tutorial_header.svg
+
+coding:
+  name: Coding
+  description: Writings about coding & development
+  lead_image: images/coding_leader.svg
+  image: images/coding_header.svg
+
+google:
+  name: Google Apps
+  description: Anything & everything about the Google eco-system
+
+chrome:
+  name: Chromebooks
+  description: Specifically related to using Chromebooks, living a cloud life
+
+blog:
+  name: Blogs & Publications
+  description: Links to blogs, tutorial sites and other useful publications
+
+tool:
+  name: Tools
+  description: Hand-picked, road-tested and thoroughly vetted tools
+
+storage:
+  name: Cloud Storage Platforms
+  description: How our data is stored, and where are the best places to put it
+
+service:
+  name: Cloud Service
+  description: Manipulating, aggregating, polishing & interpreting data (into information) in an online world
+  
+education:
+  name: Education
+  description: Anything with specific educational relevance
+
+training:
+  name: Training
+  description: Information designed and written to help us all improve, just a little bit
