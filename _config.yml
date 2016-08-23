@@ -56,7 +56,7 @@ collections:
     
 # Custom variables
 version:							"1.0.5"
-read_speed:						140
+read_speed:						160
 launched:							"2014"
 
 # Extras

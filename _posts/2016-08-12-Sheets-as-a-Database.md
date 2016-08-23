@@ -8,7 +8,7 @@ tags:
 - google
 published: true
 lead: 
-image: images/placeholder.svg
+image: /img/placeholder.svg
 ---
 {% include lead.md %}
 

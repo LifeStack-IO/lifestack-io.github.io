@@ -1,5 +1,5 @@
 ---
-title: Surviving, then thriving with Chrome OS
+title: Surviving, then thriving with, Chrome OS
 layout: post
 author:
   name: thiscouldbejd
@@ -9,7 +9,7 @@ tags:
 - google
 published: true
 lead: 
-image: images/placeholder.svg
+image: /img/placeholder.svg
 ---
 {% include lead.md %}
 

@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 lead: A map to help guide you round the 'cloud', from an educational perspective.
-image: images/about_header.svg
+image: /img/about.svg
 ---
 {% include lead.md %}
 
@@ -39,7 +39,7 @@ Current version: __{{ site.version }}__. A [test]({{ site.baseurl }}test){:targe
 
 ###### Typography
 
-The [typefaces][6] for this site are open-source and are served from [Google Fonts][7]. They have been selected to deliver a timeless aesthetic, aid readability, encourage focus & help concentration. The page & post headings are set in [Baumans](https://fonts.google.com/specimen/Baumans) (as is the lifestack logo), headings are in [Raleway](https://fonts.google.com/specimen/Raleway) and the body is in [Crimson Text](https://fonts.google.com/specimen/Crimson+Text). Text emphasis is provided by __bolds__ and _italics_, with clickable link denoted by small CAPITALISATION (rather than the normal yet inelegant underlining).
+The [typefaces][6] for this site are open-source and are served from [Google Fonts][7]. They have been selected to deliver a timeless aesthetic, aid readability, encourage focus & help concentration. The page & post titles are set in [Baumans](https://fonts.google.com/specimen/Baumans) (as is the lifestack logo), headings are in [Raleway](https://fonts.google.com/specimen/Raleway) and the body is in [Crimson Text](https://fonts.google.com/specimen/Crimson+Text). Text emphasis is provided by __bolds__ and _italics_, with clickable link denoted by small CAPITALISATION (rather than the normal yet inelegant underlining).
 
 ###### Colours
 
@@ -48,6 +48,10 @@ A simple _three-layer_ scheme is used throughout the site, with deep blacks & gr
 ###### Layout
 
 The layout of the site is build around a __content column__, restricted to a maximum [line-length](https://en.wikipedia.org/wiki/Line_length) to ensure _readability_ whilst also making the most of larger screens. A left-hand column & wide spacing-gutter is home to explanatory notes and used for header links to help structure and navigate longer posts. On smaller screen devices (e.g. mobiles), this column will fold into a _single-column design_ taking up the full width of the screen. Navigation is provided by a 'fly-out' navigation __menu__ that remains normally hidden to reduce visual clutter and distraction.
+
+###### Logo
+
+Like the titles, our logo is set in [Baumans](https://fonts.google.com/specimen/Baumans). It has been conceived as a [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus) inspired play on the notion of a 'stack'. Bold, memorable and striking, it hopefully conveys modernity and modernisim without falling back on the well-worn imagery of the 'technology' industry.
 
 ###### Illustration
 

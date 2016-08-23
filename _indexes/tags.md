@@ -3,7 +3,7 @@ layout: page
 title: Tags
 permalink: /tags/
 lead: An indexed collection of everything, arranged by tag to make it a little easier to find serendipity.
-image: images/tags_header.svg
+image: /img/tags.svg
 ---
 {% include lead.md %}
 
