@@ -49,10 +49,10 @@ collections:
     output: true
     permalink: /:collection/:path/
     title: Useful Links
-  tools:
+  snippets:
     output: true
     permalink: /:collection/:path/
-    title: Tools & Apps
+    title: Code Snippets & Explanations
     
 # Custom variables
 version:							"1.0.5"

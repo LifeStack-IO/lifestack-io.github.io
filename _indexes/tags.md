@@ -9,6 +9,7 @@ image: /img/tags.svg
 
 {% assign last_category = "" %}
 {% assign sorted_links = site.links | sort: 'title' %}
+{% assign sorted_snippets = site.snippets | sort: 'title' %}
 
 {% for tag in site.data.meta %}
 
@@ -26,7 +27,11 @@ image: /img/tags.svg
 {% assign has_links = false %}
 {% for link in site.links %}{% if link.tags contains tag_name %}{% assign has_links = true %}{% endif %}{% endfor %}
 
-{% if has_posts or has_links %}
+<!-- This checks if any snippets are tagged with this tag -->
+{% assign has_snippets = false %}
+{% for snippet in site.snippets %}{% if snippet.tags contains tag_name %}{% assign has_snippets = true %}{% endif %}{% endfor %}
+
+{% if has_posts or has_links or has_snippets %}
 
 <!-- Add Tag Title Header (and ID) -->
 
@@ -54,9 +59,10 @@ image: /img/tags.svg
 {% endfor %}
 {% endif %}
 
+<!-- Handle Links -->
 {% if has_links %}
 
-{% if "Links" != last_category%}
+{% if "Links" != last_category %}
 ###### [Links](../links)
 {% assign last_category = "Links" %}
 {% endif %}
@@ -65,6 +71,25 @@ image: /img/tags.svg
 
 {% if link.tags contains tag_name %}
 [{{ link.title }}]({{ link.link }}){:target="_new"} - {{ link.content | strip_html | truncatewords: 10 , "" }}&nbsp;[...]({{ link.url }})
+{% endif %}
+
+{% endfor %}
+
+{% endif %}
+
+
+<!-- Handle Snippets -->
+{% if has_snippets %}
+
+{% if "Snippets" != last_category %}
+###### [Snippets](../snippets)
+{% assign last_category = "Snippets" %}
+{% endif %}
+
+{% for snippet in sorted_snippets %}
+
+{% if snippet.tags contains tag_name %}
+[{{ snippet.title }}]({{ snippet.url }}) - {{ snippet.content | strip_html | truncatewords: 10 , "" }}
 {% endif %}
 
 {% endfor %}

@@ -37,7 +37,7 @@ storage:
   description: How our data is stored, and where are the best places to put it
 
 service:
-  name: Cloud Service
+  name: Cloud Services
   description: Manipulating, aggregating, polishing & interpreting data (into information) in an online world
   
 education:
