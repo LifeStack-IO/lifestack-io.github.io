@@ -65,7 +65,7 @@ figure pre {
 		transform: translateX(0);
 		margin-bottom: 0.4rem;
 	}
-	h6, #markdown-toc {float: inherit;}
+	h6, #markdown-toc {float: inherit; width: auto;}
 	.highlighter-rouge > .highlight > code {width: 90%; padding: 0.5rem;}
 	#markdown-toc {
 		margin: 1.5rem 0;
