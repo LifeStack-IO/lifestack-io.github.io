@@ -3,7 +3,7 @@ layout: page
 title: Archive
 permalink: /all/
 lead: Delve into the archive. Every post, every thought, article, tutorial and coding example right here, at your fingertips.
-image: /img/archive.svg
+image: img/archive.svg
 ---
 {% include lead.md %}
 

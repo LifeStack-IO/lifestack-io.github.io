@@ -1,7 +1,7 @@
 {% assign page_title = site.data.meta[page.category].name %}
 {% if site.data.meta[page.category].description %}{{ site.data.meta[page.category].description }}{% endif %}
 
-{% if site.data.meta[category].image %}<img src="{{ site.baseurl }}{{ site.data.meta[category].image }}"{% if site.data.meta[category].image_fallback %} onerror="this.src='{{ site.baseurl }}{{ site.data.meta[category].image_fallback }}'; this.onerror=null;"{% endif %} alt="{{ site.data.meta[category].name }}">{% endif %}
+{% if site.data.meta[page.category].image %}<img src="{{ site.baseurl }}{{ site.data.meta[page.category].image }}"{% if site.data.meta[page.category].image_fallback %} onerror="this.src='{{ site.baseurl }}{{ site.data.meta[page.category].image_fallback }}'; this.onerror=null;"{% endif %} alt="{{ site.data.meta[page.category].name }}">{% endif %}
 
 {% for post in site.categories[page.category] %}
   {% if forloop.first %}

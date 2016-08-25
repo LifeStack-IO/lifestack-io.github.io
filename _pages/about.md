@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 lead: A map to help guide you round the 'cloud', from an educational perspective.
-image: /img/about.svg
+image: img/about.svg
 ---
 {% include lead.md %}
 

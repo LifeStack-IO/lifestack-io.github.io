@@ -3,7 +3,7 @@ layout: page
 permalink: /snippets/
 title: Snippets
 lead: A collection of code snippets & explanations.
-image: /img/links.svg
+image: img/links.svg
 ---
 {% include lead.md %}
 
