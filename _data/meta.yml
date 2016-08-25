@@ -1,20 +1,23 @@
 article:
   name: Articles
   description: Articles about how to do things
-  lead_image: images/article_leader.svg
-  image: images/article_header.svg
+  lead_image: img/article_leader.svg
+  image: img/article_header.svg
+  image_fallback: img/article_leader.png
 
 tutorial:
   name: Tutorials
   description: Step-by-step guides to making things happen
-  lead_image: images/tutorial_leader.svg
-  image: images/tutorial_header.svg
+  lead_image: img/tutorial_leader.svg
+  image: img/tutorial_header.svg
+  image_fallback: img/tutorial_leader.png
 
 coding:
   name: Coding
   description: Writings about coding & development
-  lead_image: images/coding_leader.svg
-  image: images/coding_header.svg
+  lead_image: img/coding_leader.svg
+  image: img/coding_header.svg
+  image_fallback: img/coding_leader.png
 
 google:
   name: Google Apps

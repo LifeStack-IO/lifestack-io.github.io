@@ -17,7 +17,7 @@ permalink: /
 ### [ {{ post.title }} ]({{ post.url }})
 {% endif %}
 {% if post.lead %}
-  {{ post.lead }}
+  {{ post.lead | strip_html }}
 {% elsif post.content contains '<!--more-->' %}
   {{ post.content | split:'<!--more-->' | first | strip_html }}
 {% elsif post == site.posts.first %}
@@ -28,9 +28,7 @@ permalink: /
 {{ post.date | date_to_string }} ► {% for tag in post.tags %}[{{tag | capitalize}}]({{ site.baseurl }}tags/#{{ tag|slugize }}){% unless forloop.last %}, {% endunless %}{% endfor %}
 {% endfor %}
 
-{% if site.data.meta[category].lead_image %}{% assign image = site.data.meta[category].lead_image %}
-{% include {{image}} %}
-{% endif %}
+{% if site.data.meta[category].lead_image %}<img src="{{ site.baseurl }}{{ site.data.meta[category].lead_image }}"{% if site.data.meta[category].image_fallback %} onerror="this.src='{{ site.baseurl }}{{ site.data.meta[category].image_fallback }}'; this.onerror=null;"{% endif %} alt="{{ site.data.meta[category].name }}">{% endif %}
 
 {% unless forloop.last %}
 * * *
