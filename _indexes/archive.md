@@ -4,6 +4,7 @@ title: Archive
 permalink: /all/
 lead: Delve into the archive. Every post, every thought, article, tutorial and coding example right here, at your fingertips.
 image: img/archive.svg
+image_fallback: img/archive.png
 ---
 {% include lead.md %}
 

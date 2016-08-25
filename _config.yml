@@ -48,11 +48,9 @@ collections:
   links:
     output: true
     permalink: /:collection/:path/
-    title: Useful Links
   snippets:
     output: true
     permalink: /:collection/:path/
-    title: Code Snippets & Explanations
     
 # Custom variables
 version:							"1.0.5"

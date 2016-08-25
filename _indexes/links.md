@@ -2,8 +2,9 @@
 layout: page
 permalink: /links/
 title: Links
-lead: A collection of useful cloud-based tools & links.
+lead: Useful cloud-based links, tools & sites.
 image: img/links.svg
+image_fallback: img/links.png
 ---
 {% include lead.md %}
 

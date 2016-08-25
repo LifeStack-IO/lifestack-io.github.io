@@ -4,6 +4,7 @@ title: Tags
 permalink: /tags/
 lead: An indexed collection of everything, arranged by tag to make it a little easier to find serendipity.
 image: img/tags.svg
+image_fallback: img/tags.png
 ---
 {% include lead.md %}
 

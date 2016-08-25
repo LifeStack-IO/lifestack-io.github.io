@@ -80,6 +80,8 @@ blockquote {
 	> p {
 		&:first-of-type { 
 			margin-bottom: 1.5rem;
+			text-align: justify;
+			text-align-last: left;
 			&:first-letter {
 				float: left;
 				font-family: $font-highlight;
@@ -165,7 +167,7 @@ blockquote {
 
 .highlighter-rouge pre {
 		white-space: pre-wrap !important;
-		word-break: break-all;
+		word-break: keep-all;
 		word-wrap: break-word;
 	}
 // -- Specific Classes -- //
@@ -192,7 +194,7 @@ blockquote {
 	// This switches ON wrapping once the viewport gets to a reasonable size
 	pre {
 		white-space: pre-wrap !important;
-		word-break: break-all;
+		word-break: keep-all;
 		word-wrap: break-word;
 	}
 	// This switches OFF wrapping when line numbers are displayed (doesn't work)
