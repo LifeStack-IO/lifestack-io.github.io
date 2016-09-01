@@ -135,7 +135,7 @@ If you choose to include information about a student that could be deemed sensit
 
 ## Using it
 
-If you are a [Google Classroom][25] __devotee__, then you will likely be creating, managing and marking assignments with Classroom. Classroom gives you two mechanisms to extract the marks / grades you enter. For the technologically confident, you can use the [Classroom API][26] and a little bit of [Google Apps Script][27] to import the most current results straight into your markbook every time you open it (see the [snippets](/snippets) section of this site for further information). Alternatively, you can [export][28] all the current data from a class into a google sheet using the _Student Work_ section of the class page (the same page where you return work from).
+If you are a [Google Classroom][25] __devotee__, then you will likely be creating, managing and marking assignments with Classroom. Classroom gives you two mechanisms to extract the marks / grades you enter. For the technologically confident, you can use the [Classroom API][26] and a little bit of [Google Apps Script][27] to import the most current results straight into your markbook every time you open it (see the [snippets](/snippets "Code Snippets & Examples") section of this site for further information). Alternatively, you can [export][28] all the current data from a class into a google sheet using the _Student Work_ section of the class page (the same page where you return work from).
 
 Currently, every time you export to Google sheets, it will create a new spreadsheet. This means you'll need to copy and paste all the data from this sheet into your markbook. The __easiest way__ to do this at the moment is to create a new sheet in your markbook for each class you have in your markbook, and also have in Classroom. From our earlier example, if you are creating a markbook for a class called '11CH', and are also using Classroom to mark assignments, you should create a new sheet in your markbook called '11CH Classroom' or something similar.
 
@@ -201,34 +201,34 @@ To use these examples, simply adjust the ranges to encompass the data you with t
 [^spreadsheet]: This refers to the entire Google Spreadsheet (e.g. the 'file' in your Google Drive). This is the equivalent of a '_workbook_' in Excel parlance.
 [^sheet]: A spreadsheet can contain multiple sheets arranged as tabs at the bottom. It's easy to reference data in each of these sheets using formulas or add-ons. In Excel, you would call this a '_worksheet_'
 
-  [1]: https://www.google.co.uk/sheets/about/
-  [2]: https://support.google.com/docs/answer/49114?hl=en
-  [3]: https://support.google.com/docs/answer/180897?hl=en
-  [4]: https://nationalpupildatabase.wikispaces.com/IDs#toc1
-  [5]: https://en.wikipedia.org/wiki/Concatenation
-  [6]: https://support.google.com/edu/classroom/answer/6020294
-  [7]: https://support.google.com/docs/answer/54813?hl=en
-  [8]: https://support.google.com/docs/answer/141104?hl=en
-  [9]: http://www.gcflearnfree.org/googlespreadsheets/formatting-cells/2/
-  [10]: https://www.shorttutorials.com/google-docs-spreadsheet/insert-note.html
-  [11]: https://en.wikipedia.org/wiki/Personally_identifiable_information
-  [12]: https://ico.org.uk/for-organisations/guide-to-data-protection/key-definitions/
-  [13]: https://support.google.com/docs/table/25273?hl=en
-  [14]: https://support.google.com/docs/answer/3093340
-  [15]: https://developers.google.com/chart/interactive/docs/querylanguage#Order_By
-  [16]: https://support.google.com/docs/answer/3093343
-  [17]: https://www.youtube.com/watch?v=3OcDd55JJXQ
-  [18]: https://support.google.com/docs/answer/190843?hl=en
-  [19]: http://www.howtogeek.com/howto/15799/how-to-use-autofill-on-a-google-docs-spreadsheet-quick-tips/
-  [20]: http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR
-  [21]: https://en.wikipedia.org/wiki/Sparkline
-  [22]: https://en.wikipedia.org/wiki/Average#Arithmetic_mean
-  [23]: http://www.education.gov.uk/schools/performance/archive/schools_04/sec3b.shtml
-  [24]: https://en.wikipedia.org/wiki/Standard_deviation
-  [25]: https://classroom.google.com
-  [26]: https://developers.google.com/classroom/
-  [27]: https://developers.google.com/apps-script/
-  [28]: https://support.google.com/edu/classroom/answer/6020294
-  [29]: https://support.google.com/docs/answer/3093289
-  [30]: https://support.google.com/docs/answer/3093275
-  [31]: http://web.pdx.edu/~stipakb/CellRefs.htm
+  [1]: https://www.google.co.uk/sheets/about/ "All about Google Sheets"
+  [2]: https://support.google.com/docs/answer/49114?hl=en "Create and rename documents, spreadsheets, and presentations"
+  [3]: https://support.google.com/docs/answer/180897?hl=en "Copy, re-order, and delete sheets"
+  [4]: https://nationalpupildatabase.wikispaces.com/IDs#toc1 "Identifiers and the National Pupil Database"
+  [5]: https://en.wikipedia.org/wiki/Concatenation "What is concatenation - Wikipedia"
+  [6]: https://support.google.com/edu/classroom/answer/6020294 "Grade and return an assignment in Google Classroom"
+  [7]: https://support.google.com/docs/answer/54813?hl=en "Freeze or unfreeze columns & rows"
+  [8]: https://support.google.com/docs/answer/141104?hl=en "Merge cells and wrap text"
+  [9]: http://www.gcflearnfree.org/googlespreadsheets/formatting-cells/2/ "How to format cells in Google Sheets"
+  [10]: https://www.shorttutorials.com/google-docs-spreadsheet/insert-note.html "How to manage notes in Google Sheets"
+  [11]: https://en.wikipedia.org/wiki/Personally_identifiable_information "What constitutes personal identifiable information - Wikipedia"
+  [12]: https://ico.org.uk/for-organisations/guide-to-data-protection/key-definitions/ "Key definitions of the Data Protection Act"
+  [13]: https://support.google.com/docs/table/25273?hl=en "Google spreadsheets function list"
+  [14]: https://support.google.com/docs/answer/3093340 "How to use the IMPORTRANGE function"
+  [15]: https://developers.google.com/chart/interactive/docs/querylanguage#Order_By "Query Language Reference - Order By"
+  [16]: https://support.google.com/docs/answer/3093343 "How to use the QUERY function"
+  [17]: https://www.youtube.com/watch?v=3OcDd55JJXQ "Google Sheets- Sort and Filters"
+  [18]: https://support.google.com/docs/answer/190843?hl=en "See the history of changes made to a file"
+  [19]: http://www.howtogeek.com/howto/15799/how-to-use-autofill-on-a-google-docs-spreadsheet-quick-tips/ "How To Use AutoFill on a Google Docs Spreadsheet"
+  [20]: http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR "Sparkline theory and practice - Edward Tufte"
+  [21]: https://en.wikipedia.org/wiki/Sparkline "All about Sparklines - Wikipedia"
+  [22]: https://en.wikipedia.org/wiki/Average#Arithmetic_mean "What is the Arithmetic Mean - Wikipedia"
+  [23]: http://www.education.gov.uk/schools/performance/archive/schools_04/sec3b.shtml "What do we mean by Value-Added"
+  [24]: https://en.wikipedia.org/wiki/Standard_deviation "What is Standard Deviation - Wikipedia"
+  [25]: https://classroom.google.com "Google Classroom"
+  [26]: https://developers.google.com/classroom/ "Programmatic access to courses, teachers, and students"
+  [27]: https://developers.google.com/apps-script/ "Google Apps Script - Tutorials, Quickstarts, Examples"
+  [28]: https://support.google.com/edu/classroom/answer/6020294 "Grade and return an assignment"
+  [29]: https://support.google.com/docs/answer/3093289 "How to use the SPARKLINE function"
+  [30]: https://support.google.com/docs/answer/3093275 "How to use the ARRAYFORMULA function"
+  [31]: http://web.pdx.edu/~stipakb/CellRefs.htm "Relative vs. Absolute Cell References in Spreadsheets"
