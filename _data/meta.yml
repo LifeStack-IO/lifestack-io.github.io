@@ -50,3 +50,7 @@ education:
 training:
   name: Training
   description: Information designed and written to help us all improve, just a little bit
+
+markbook:
+  name: Markbooks
+  description: All about markbooks, how to create, use, analyse and make the best of data in the classroom

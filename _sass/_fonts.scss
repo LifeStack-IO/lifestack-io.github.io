@@ -41,7 +41,19 @@ figure code pre, figure pre code {
 	line-height: 1.2 !important;
 };
 
-strong {font-weight: $font-weight-heading;}
+strong, abbr {font-weight: $font-weight-heading;}
+abbr {color: $colour-general;}
+em.kb-shortcut {
+	white-space: nowrap !important;
+	font-size: 90%;
+	font-style: normal;
+	text-transform: uppercase;
+	border-radius: 0.2rem;
+	padding: 0 0.1rem;
+	margin: 0 0.1rem;
+	background-color: $colour-general-dark;
+	color: $colour-background;
+}
 .content {
 	p a, li a {text-transform: lowercase; font-variant: small-caps; font-size: 106%; padding: 0 0.1em 0 0.1em;}
 	#markdown-toc {
@@ -72,6 +84,13 @@ h1, h2, h3, h4, h5, h6 {&:target {text-decoration: underline;}}
 		font-size: 120%;
 		line-height: $line-height * $line-height;
 	}
+}
+
+.footnotes {
+	color: $colour-general;
+	font-size: 80%;
+	ol {padding: 0 0.5rem; margin: 0;}
+	a {color: $colour-general-dark;}
 }
 
 .title, .finally {

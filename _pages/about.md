@@ -7,7 +7,7 @@ image: img/about.svg
 ---
 {% include lead.md %}
 
-_Articles, tutorials reviews and guidance. Information and advice to help you get the most from technology._
+_{{ site.description }}_
 
 ## Rationale
 
@@ -39,11 +39,11 @@ Current version: __{{ site.version }}__. A [test]({{ site.baseurl }}test){:targe
 
 ###### Typography
 
-The [typefaces][6] for this site are open-source and are served from [Google Fonts][7]. They have been selected to deliver a timeless aesthetic, aid readability, encourage focus & help concentration. The page & post titles are set in [Baumans](https://fonts.google.com/specimen/Baumans) (as is the lifestack logo), headings are in [Raleway](https://fonts.google.com/specimen/Raleway) and the body is in [Crimson Text](https://fonts.google.com/specimen/Crimson+Text). Text emphasis is provided by __bolds__ and _italics_, with clickable link denoted by small CAPITALISATION (rather than the normal yet inelegant underlining).
+The [typefaces][6] for this site are open-source and are served from [Google Fonts][7]. They have been selected to deliver a timeless aesthetic, aid readability, encourage focus & help concentration. The page & post titles are set in [Baumans](https://fonts.google.com/specimen/Baumans) (as is the lifestack logo), headings are in [Raleway](https://fonts.google.com/specimen/Raleway) and the body is in [Crimson Text](https://fonts.google.com/specimen/Crimson+Text). Text emphasis is provided by __bolds__ and _italics_, with clickable link denoted by small CAPITALISATION (rather than the normal yet inelegant underlining). Abbreviations, such as HTML, are set in a lighter-colored bold and will display their meaning if you hover over them.
 
 ###### Colours
 
-A simple _three-layer_ scheme is used throughout the site, with deep blacks & greys for the _main content_, lighter greys for background _information_ or_icons_. A __bold__ red highlight is used for _links_, _titles_ and the _navigation menu_. As above, this simplicity is a deliberate design decision to help focus attention on the __words__ themselves.
+A simple _three-layer_ scheme is used throughout the site, with deep blacks & greys for the _main content_, lighter greys for background _information_ or_icons_. A __bold__ red highlight is used for _links_, _titles_ and the _navigation menu_. As above, this simplicity is a deliberate design decision to help focus attention on the __words__ themselves. Keyboard shortcuts, such as *ctrl-v*{:.kb-shortcut} are memorably emphasised with a dark background and extra spacing to help them stick in the mind, to hopefully save you time in the future.
 
 ###### Layout
 
@@ -72,6 +72,8 @@ To help you use the content on this site in _useful ways_, everything is _[open-
 Unless otherwise stated in the code, the operational plumbing of the site (code, CSS etc.) are made available under a [GNU GPL v3 licence][15], so you are free to redistribute it under the same terms but this means there is _absolute no warranty_.
 
 Finally, any __code__ examples that are used for _illustrative_ or _educational purposes_ within the content on the site is provided under a permissive [MIT license][16], meaning you can use it in pretty much anyway you wish (including commercial works!).
+
+*[HTML]: Hypertext Markup Language
 
   [1]: https://en.wikipedia.org/wiki/Markdown "Wikipedia Article about Markdown"
   [2]: http://daringfireball.net/projects/markdown "Article by Jon Gruber detailing Markdown"

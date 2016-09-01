@@ -22,8 +22,8 @@
 		<style type="text/css">{% capture include_to_scssify %}{% include style.scss %}{% endcapture %}{{ include_to_scssify | scssify }}</style>
 		
 		<!-- Async CSS -->
-		<link rel="preload" href="//fonts.googleapis.com/css?family=Baumans|Crimson+Text:400,400i,700,700i|Inconsolata:400,700|Raleway:400,700" as="style" onload="this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Baumans|Crimson+Text:400,400i,700,700i|Inconsolata:400,700|Raleway:400,700"></noscript>
+		<link rel="preload" href="//fonts.googleapis.com/css?family={{ site.fonts }}" as="style" onload="this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ site.fonts }}"></noscript>
 		<!-- Script from: https://github.com/filamentgroup/loadCSS Licence = The MIT License (MIT) | Copyright (c) 2014 Filament Group -->
 		<script>
 			(function(w){

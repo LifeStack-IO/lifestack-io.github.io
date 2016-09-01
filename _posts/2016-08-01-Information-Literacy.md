@@ -7,7 +7,7 @@ category: article
 tags:
 - education
 - training
-published: true
+published: false
 lead: 
 image: img/placeholder.svg
 ---

@@ -34,14 +34,15 @@ permalink:						pretty
 
 # Setup
 title:								"LifeStack"
-byline:								"Training"
+byline:								"Training, thoughts, ideas, code & tutorials"
   
-description:					"Training"
+description:					"Articles, tutorials reviews and guidance. Information and advice to help you get the most from technology."
 url:									lifestack.io
 baseurl:							/
 author:
   name:								"LifeStack.io"
   url:								https://github.com/LifeStack-IO
+fonts:								"Alegreya:400,400i,700,700i|Baumans|Inconsolata:400,700|Raleway:400,700"
 
 # Collections
 collections:
@@ -53,13 +54,13 @@ collections:
     permalink: /:collection/:path/
     
 # Custom variables
-version:							"1.0.5"
+version:							"1.0.6"
 read_speed:						160
 launched:							"2014"
 
 # Extras
 analytics:
-  enable:							false
+  enable:							true
   id:									"UA-53673057-1"
 
 github:
