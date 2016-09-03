@@ -49,13 +49,19 @@ em.kb-shortcut {
 	font-style: normal;
 	text-transform: uppercase;
 	border-radius: 0.2rem;
-	padding: 0 0.1rem;
+	padding: 0 0.2rem;
 	margin: 0 0.1rem;
 	background-color: $colour-general-dark;
 	color: $colour-background;
 }
 .content {
-	p a, li a {text-transform: lowercase; font-variant: small-caps; font-size: 106%; padding: 0 0.1em 0 0.1em;}
+	p a, li a {
+		text-transform: lowercase;
+		font-variant: small-caps;
+		font-weight: $font-weight-heading;
+		font-size: 110%;
+		padding: 0 0.1em 0 0.1em;
+	}
 	#markdown-toc {
   	font-family: $font-heading;
   	font-size: 90%;

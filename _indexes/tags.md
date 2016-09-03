@@ -71,7 +71,7 @@ image_fallback: img/tags.png
 {% for link in sorted_links %}
 
 {% if link.tags contains tag_name %}
-[{{ link.title }}]({{ link.link }}){:target="_new"} - {{ link.content | strip_html | truncatewords: 10 , "" }}&nbsp;[...]({{ link.url }})
+[{{ link.title }}]({{ link.link }}){:target="_new"} - {% if link.lead %}{{ link.lead }}{% else %}{{ link.content | strip_html | truncatewords: 10 , "" }}{% endif %}&nbsp;[...]({{ link.url }})
 {% endif %}
 
 {% endfor %}
@@ -90,7 +90,7 @@ image_fallback: img/tags.png
 {% for snippet in sorted_snippets %}
 
 {% if snippet.tags contains tag_name %}
-[{{ snippet.title }}]({{ snippet.url }}) - {{ snippet.content | strip_html | truncatewords: 10 , "" }}
+[{{ snippet.title }}]({{ snippet.url }}) - {% if snippet.lead %}{{ snippet.lead }}{% else %}{{ snippet.content | strip_html | truncatewords: 10 , "" }}{% endif %}
 {% endif %}
 
 {% endfor %}

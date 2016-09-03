@@ -3,11 +3,13 @@ label: snippets
 layout: post
 title: Google Form Response Notifications
 author:
-  name: thiscouldbejd
+  name: jd
 tags:
 - google
+- sheets
 category: coding
 lead: Use Google Apps Script to send notifications to different recipients based on a form value (e.g. organisation)
+published: true
 ---
 {% include lead.md %}
 

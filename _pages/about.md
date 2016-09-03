@@ -39,7 +39,7 @@ Current version: __{{ site.version }}__. A [test]({{ site.baseurl }}test){:targe
 
 ###### Typography
 
-The [typefaces][6] for this site are open-source and are served from [Google Fonts][7]. They have been selected to deliver a timeless aesthetic, aid readability, encourage focus & help concentration. The page & post titles are set in [Baumans](https://fonts.google.com/specimen/Baumans) (as is the lifestack logo), headings are in [Raleway](https://fonts.google.com/specimen/Raleway) and the body is in [Alegreya](https://fonts.google.com/specimen/Alegreya). Text emphasis is provided by __bolds__ and _italics_, with clickable link denoted by small CAPITALISATION (rather than the normal yet inelegant underlining). Abbreviations, such as HTML, are set in a lighter-colored bold and will display their meaning if you hover over them.
+The [typefaces][6] for this site are open-source and are served from [Google Fonts][7]. They have been selected to deliver a timeless aesthetic, aid readability, encourage focus & help concentration. The page & post titles are set in [Baumans](https://fonts.google.com/specimen/Baumans) (as is the lifestack logo), headings are in [Raleway](https://fonts.google.com/specimen/Raleway) and the body is in [Alegreya](https://fonts.google.com/specimen/Alegreya) (an award winning & highly readable typeface from [Huerta Tipográfica](https://github.com/huertatipografica/Alegreya-libre). Text emphasis is provided by __bolds__ and _italics_, with clickable link denoted by small CAPITALISATION (rather than the normal yet inelegant underlining). Abbreviations, such as HTML, are set in a lighter-colored bold and will display their meaning if you hover over them.
 
 ###### Colours
 

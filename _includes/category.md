@@ -18,5 +18,8 @@
   {% else %}
 {{ post.content | strip_html | truncatewords: 16 , "  .." }}
   {% endif %}
-{{ post.date | date_to_string }} ► {% for tag in post.tags %}[{{tag | capitalize}}]({{ site.baseurl }}tags/#{{ tag|slugize }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+  
+__{{ post.date | date_to_string }}__ ► {% for tag in post.tags %}[{{tag | capitalize}}]({{ site.baseurl }}tags/#{{ tag|slugize }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+{:.finally}
+
 {% endfor %}
