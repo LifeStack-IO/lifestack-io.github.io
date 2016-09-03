@@ -6,8 +6,8 @@ author:
   name: jd
 tags:
 - google
-- sheets
-category: coding
+- sheet
+category: tutorial
 lead: How to match & link data from one part of a Google Sheet to another (or between sheets) using the INDEX and MATCH functions.
 published: true
 ---
