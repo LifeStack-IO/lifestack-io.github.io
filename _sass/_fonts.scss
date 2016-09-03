@@ -71,6 +71,7 @@ em.kb-shortcut {
 			a {font-weight: $font-weight; font-variant: initial;}
 		}
 	}
+	.highlight {font-style: normal; color: $colour-highlight;}
 }
 h6, .highlighter-rouge > .highlight > code {font-size: 75%; color: $colour-general; word-break: keep-all;};
 h5 {font-size: 105%};

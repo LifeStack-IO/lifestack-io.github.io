@@ -54,7 +54,7 @@ image_fallback: img/tags.png
 {% endif %}
 
 {% for post in category.items | sort: 'title' %}
-[ {{ post.title }} ]({{ root_url }}{{ post.url }}){% if post.lead %} -- {{ post.lead }}{% endif %} ({{ post.date | date: "%b, %Y" }})
+[ {{ post.title }} ]({{ root_url }}{{ post.url }}){% if post.lead %} -- {{ post.lead }}{% endif %} (*{{ post.date | date: "%b, %Y" }}*{:.highlight})
 {% endfor %}
 
 {% endfor %}
