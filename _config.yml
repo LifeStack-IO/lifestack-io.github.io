@@ -28,6 +28,7 @@ sass:
 compress_html:
   comments:						all
   clippings:					all
+  blanklines:					false
 
 # Permalinks
 permalink:						pretty
