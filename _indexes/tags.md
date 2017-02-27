@@ -53,7 +53,8 @@ image_fallback: img/tags.png
 {% assign last_category = site.data.meta[category.name].name %}
 {% endif %}
 
-{% for post in category.items | sort: 'title' %}
+{% assign sorted_posts = category.items | sort: 'title' %}
+{% for post in sorted_posts %}
 [ {{ post.title }} ]({{ root_url }}{{ post.url }}){% if post.lead %} -- {{ post.lead }}{% endif %} (*{{ post.date | date: "%b, %Y" }}*{:.highlight})
 {% endfor %}
 
