@@ -61,6 +61,7 @@ launched:							"2014"
 # Extras
 analytics:
   enable:							true
+  scroll:							true
   id:									"UA-53673057-1"
 
 github:
