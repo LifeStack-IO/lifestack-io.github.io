@@ -7,7 +7,7 @@ author:
 tags:
 - google
 - sheet
-category: tutorial
+category: functions
 lead: Use the IMPORTRANGE function in Google Sheets to aggregate and link information across spreadsheets.
 published: true
 ---

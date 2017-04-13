@@ -18,7 +18,12 @@ coding:
   lead_image: img/coding_leader.svg
   image: img/coding_header.svg
   image_fallback: img/coding_leader.png
-
+  
+functions:
+  name: Spreadsheet Functions
+  description: Examples of how to use Functions to get the best out of your spreadsheets
+  hidden: true
+  
 google:
   name: Google Apps
   description: Anything & everything about the Google eco-system

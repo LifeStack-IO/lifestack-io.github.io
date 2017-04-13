@@ -2,7 +2,7 @@
 title: Developing anything atop of Google Apps
 layout: post
 author:
-  name: thiscouldbejd
+  name: jd
 category: coding
 tags:
 - google

@@ -30,12 +30,12 @@ The most __recent posts__ are below, but you can find everything in the [archive
   {{ post.content | strip_html | truncatewords: 16 , "  .." }}
 {% endif %}
 
-__{{ post.date | date_to_string }}__ ► {% for tag in post.tags %}[{{tag | capitalize}}]({{ site.baseurl }}tags/#{{ tag|slugize }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+__{{ post.date | date_to_string }}__ ► {% for tag in post.tags %}[{{tag | capitalize}}]({{ site.baseurl }}/tags/#{{ tag|slugize }}){% unless forloop.last %}, {% endunless %}{% endfor %}
 {:.finally}
 
 {% endfor %}
 
-{% if site.data.meta[category].lead_image %}<img src="{{ site.baseurl }}{{ site.data.meta[category].lead_image }}"{% if site.data.meta[category].image_fallback %} onerror="this.src='{{ site.baseurl }}{{ site.data.meta[category].image_fallback }}'; this.onerror=null;"{% endif %} alt="{{ site.data.meta[category].name }}">{% endif %}
+{% if site.data.meta[category].lead_image %}<img src="{{ site.baseurl }}/{{ site.data.meta[category].lead_image }}"{% if site.data.meta[category].image_fallback %} onerror="this.src='{{ site.baseurl }}/{{ site.data.meta[category].image_fallback }}'; this.onerror=null;"{% endif %} alt="{{ site.data.meta[category].name }}">{% endif %}
 
 {% unless forloop.last %}
 * * *

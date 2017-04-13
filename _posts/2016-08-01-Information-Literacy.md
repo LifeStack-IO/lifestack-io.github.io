@@ -2,7 +2,7 @@
 title: Information & Data Literacy
 layout: post
 author:
-  name: thiscouldbejd
+  name: jd
 category: article
 tags:
 - education

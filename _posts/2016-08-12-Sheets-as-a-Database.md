@@ -2,10 +2,11 @@
 title: Google Sheets as a database
 layout: post
 author:
-  name: thiscouldbejd
+  name: jd
 category: coding
 tags:
 - google
+- sheet
 published: false
 lead: 
 image: img/placeholder.svg

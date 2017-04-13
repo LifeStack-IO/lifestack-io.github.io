@@ -2,7 +2,7 @@
 title: Surviving, then thriving with, Chrome OS
 layout: post
 author:
-  name: thiscouldbejd
+  name: jd
 category: article
 tags:
 - chrome

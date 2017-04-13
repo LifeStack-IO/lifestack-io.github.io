@@ -7,7 +7,7 @@ author:
 tags:
 - google
 - sheet
-category: tutorial
+category: functions
 lead: Transform, filter and aggregate sets of data using the QUERY function.
 published: true
 ---

@@ -65,7 +65,7 @@ This site is a [static][8] website, meaning __no__ _server-side code_ runs when 
 
 To help you use the content on this site in _useful ways_, everything is _[open-source][17]_, and here is a summary of how the site is __licensed__.
 
-###### &copy; {% capture year %}{{ site.time | date: '%Y' }}{% endcapture %}{% if year != site.launched %}{{ site.launched }}-{% endif%}{{ year }}, [{{site.author.name}}]({{ site.baseurl }}).
+###### &copy; {% capture year %}{{ site.time | date: '%Y' }}{% endcapture %}{% if year != site.launched %}{{ site.launched }}-{% endif%}{{ year }}, [{{site.author.name}}](/).
 
 ![Creative Commons Licence](https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png) All the written content on this site is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/){:rel="license"}. This means you are free to _link to_, _copy_, _redistribute_ and _build upon_ this work providing you share the results, give attribution and don't use it for commercial purposes.
 

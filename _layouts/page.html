@@ -16,7 +16,7 @@ layout: compress
 					<div class="date">{{ page.date | date_to_string }}</div>
 				{% endif %}
 				{% if page.layout == "post" %}
-					<div><a href="{{ site.baseurl }}all/{{ page.category | slugify }}">{{ page.category | downcase }}</a>
+					<div><a href="{{ site.baseurl }}/all/{{ page.category | slugify }}">{{ page.category | downcase }}</a>
 					{% capture word_count %}
   					{{ page.content | number_of_words | minus: site.read_speed }}
 					{% endcapture %}

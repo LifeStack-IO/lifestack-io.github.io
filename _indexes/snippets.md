@@ -20,7 +20,7 @@ image_fallback: img/snippets.png
 {% assign tags = snippet.tags %}
 <div class="finally">
 {% for tag in tags %}
-	{% if forloop.first %}<p><strong>Tagged </strong>► {% endif %}<a href="/tags/#{{tag|slugize}}">{{tag | capitalize}}</a>{% unless forloop.last %}, {% endunless %}{% if forloop.last %}</p>{% endif %}
+	{% if forloop.first %}<p><strong>Tagged </strong>► {% endif %}<a href="{{ site.baseurl }}/tags/#{{tag|slugize}}">{{tag | capitalize}}</a>{% unless forloop.last %}, {% endunless %}{% if forloop.last %}</p>{% endif %}
 {% endfor %}
 </div>
 {% endfor %}
