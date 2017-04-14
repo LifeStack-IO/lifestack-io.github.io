@@ -20,7 +20,7 @@ Taking a little time to set up a [sheets-based][1]{:target="_new"} markbook at t
 
 ## Setting it up
 
-![Example Layout]({{ site.baseurl }}assets/{{ page.asset_prefix }}_layout.svg)
+![Example Layout]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_layout.svg)
 
 If you would like to keep things simple, you should probably opt for just a __single spreadsheet__[^spreadsheet] with a tab / individual sheet[^sheet] for each group that you teach during the year. If you have a lot of classes, need to share some class marks (but not all of them) with other teachers, or more complex needs (such as extra tabs for analysis etc.) then by all means use multiple spreadsheets. It doesn't make too much difference from a technological point of view, it simply comes down to what __suits you best__.
 
@@ -48,7 +48,7 @@ Finally, you should also try to include a column for student __email address__ /
 
 If you appreciate a well-formatted and visually neat markbook, and you are using multiple rows for your headings (see below) you can [merge][8] the student column headings into a single cell. Then you can [vertically align][9] the cell text to the top, middle or bottom depending upon how you prefer it.
 
-![Example Merge]({{ site.baseurl }}assets/{{ page.asset_prefix }}_merge.svg)
+![Example Merge]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_merge.svg)
 
 ###### Assignment information
 
@@ -87,7 +87,7 @@ QUERY(IMPORTRANGE("SPREADSHEET_ID", "SHEET_NAME!A:D"),
 
 Whilst this method is _great_ because you don't need to worry about keeping your markbook current with changes in names and classes (this is all done in the master sheet), there is an important word of __warning__ if you are using this method. Whilst the formula name includes the word __import__, what is really means is __link__. If the source data changes, then you markbook will change too. This isn't a problem if new data is only added to the end of the master sheet, or informal names change slightly, but if it is appended in the middle (e.g. when a new student joins your class mid-way through the year), then you will end up with a extra row too. This will mean that marks assigned to that student (e.g. that row) will now appear to belong to someone else. The same problem can occur when a student leaves a class and their row is deleted from the master sheet. Down this particular road, terrible data-handling mistakes lurk!
 
-![Example Mismatch]({{ site.baseurl }}assets/{{ page.asset_prefix }}_mismatch.svg)
+![Example Mismatch]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_mismatch.svg)
 
 This is a common problem in spreadsheet markbooks, and often happens when data is carelessly sorted or filtered (one column is re-ordered but _not_ all the others!). Of course, Google Sheets helps us by normally expanding our [sorts][17] to include all columns, and by providing the ability to [roll-back][18] to a previous version of the sheet if we get into a jumble - but mistakes do still happen and, even worse, __remain unnoticed__.
 
@@ -179,7 +179,7 @@ SPARKLINE(E2:I2, {"charttype","column";"max",100})
 
 You can also use the built-in [sparkline command][29] to create more complex sparklines for a range / set of data (e.g. marks for a student over time). For example, you might wish to use a columnar sparkline to visualise this data, with the highest / lowest marks highlighted in particular colours (such as red & green).
 
-![Example Sparklines]({{ site.baseurl }}assets/{{ page.asset_prefix }}_sparklines.svg)
+![Example Sparklines]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_sparklines.svg)
 
 The formula below (Example 2) is for the same range of data, but includes highlight colours and also dynamically sets the minimum and maximum extents of the y-axis (the vertical, value axis) to the min / max mark in your markbook for this class. This helps keep all the axis for each sparkline the same, allowing for a simple visual comparison __between__ students. If you are more concerned with the performance of an individual over time then you can let the formula choose axis extents for you, to give the greatest level of detail.
 
