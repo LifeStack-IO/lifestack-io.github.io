@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: The INDEX & MATCH Functions
+short_title: __INDEX__ & __MATCH__ Functions
 author:
   name: jd
 tags:

@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: The CONCATENATE Function
+short_title: __CONCATENATE__ Function
 author:
   name: jd
 tags:

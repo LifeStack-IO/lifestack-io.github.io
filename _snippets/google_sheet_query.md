@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: The QUERY Function
+short_title: __QUERY__ Function
 author:
   name: jd
 tags:

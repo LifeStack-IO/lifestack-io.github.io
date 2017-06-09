@@ -5,6 +5,7 @@ $font-general:								"Alegreya", serif;
 $font-code:										"Inconsolata", "monospace";
 $font-weight:									400;
 $font-weight-heading:					700;
+$font-weight-subheading:			600;
 
 /* == Font Size Breakpoints == */
 $font-mq-base:								42em;
@@ -25,6 +26,7 @@ $colour-general-light:				lighten($colour-general, 40%);
 $colour-general-dark:					darken($colour-general, 30%);
 $colour-highlight:						#e60000;
 $colour-highlight-light: 			rgba($colour-highlight, 0.05);
+$colour-highlight-dark: 			darken($colour-highlight, 15%);
 $colour-select-light:					rgba($colour-background, 0.2);
 $colour-select-dark: 					rgba($colour-emphasis, 0.1);
 $colour-select-highlight: 		rgba($colour-highlight, 0.5);

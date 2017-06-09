@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: Embed IMPORTRANGE in Formulas
+short_title: __IMPORTRANGE__ in Formulas
 author:
   name: jd
 tags:

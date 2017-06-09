@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: The SPLIT Function
+short_title: __SPLIT__ Function
 author:
   name: jd
 tags:

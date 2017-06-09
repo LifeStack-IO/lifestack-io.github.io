@@ -26,13 +26,8 @@ __{{ post.date | date_to_string }}__ ► {% for tag in post.tags %}[{{tag | capi
 
 {% assign snippets_by_category = site.snippets | where: "category", page.category | sort: "title"  %}
 {% for snippet in snippets_by_category  %}
-###### [{{ snippet.title }}]({{ snippet.url }})
+###### [{% if snippet.short_title %}{{ snippet.short_title }}{% else %}{{ snippet.title }}{% endif %}]({{ snippet.url }})
 {% if snippet.lead %}{{ snippet.lead }}{% else %}{{ snippet.content | strip_html | truncatewords: 30 , " ..." }}{% endif %}
 &nbsp;[Read More ...]({{ snippet.url }})
-{% assign tags = snippet.tags %}
-<div class="finally">
-{% for tag in tags %}
-	{% if forloop.first %}<p><strong>Tagged </strong>► {% endif %}<a href="{{ site.baseurl }}/tags/#{{tag|slugize}}">{{tag | capitalize}}</a>{% unless forloop.last %}, {% endunless %}{% if forloop.last %}</p>{% endif %}
-{% endfor %}
-</div>
+
 {% endfor %}

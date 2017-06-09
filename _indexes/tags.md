@@ -91,7 +91,7 @@ image_fallback: img/tags.png
 {% for snippet in sorted_snippets %}
 
 {% if snippet.tags contains tag_name %}
-[{{ snippet.title }}]({{ snippet.url }}) - {% if snippet.lead %}{{ snippet.lead }}{% else %}{{ snippet.content | strip_html | truncatewords: 10 , "" }}{% endif %}
+[{% if snippet.short_title %}{{ snippet.short_title }}{% else %}{{ snippet.title }}{% endif %}]({{ snippet.url }}) - {% if snippet.lead %}{{ snippet.lead }}{% else %}{{ snippet.content | strip_html | truncatewords: 10 , "" }}{% endif %}
 {% endif %}
 
 {% endfor %}

@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: The IMPORTRANGE Function
+short_title: __IMPORTRANGE__ Function
 author:
   name: jd
 tags:

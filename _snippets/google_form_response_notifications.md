@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: Google Form Response Notifications
+short_title: __Form Response__ Notifications
 author:
   name: jd
 tags:

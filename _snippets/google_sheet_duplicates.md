@@ -2,6 +2,7 @@
 label: snippets
 layout: post
 title: Finding Duplicates Using Sheets
+short_title: Finding __Duplicates__
 author:
   name: jd
 tags:
