@@ -78,7 +78,7 @@ function get_Notification_Routing() {
   // The return statement means we give this data back to the code from which this function was called.
   return routing;
 }
-{% endhighlight %}
+{% endhighlight %}{:class="code"}
 
 {% highlight javascript %}
 // This is the catch-all address (e.g. if there isn't an email for a particular value). In this case, notifications will be sent here.
@@ -122,7 +122,7 @@ function handle_onSubmit(e) {
   }
   
 }
-{% endhighlight %}
+{% endhighlight %}{:class="code"}
 
 ###### Set Up the Trigger
 

@@ -17,7 +17,7 @@ body {
 
 figure pre {
 	margin: 0;
-	padding: 0 0.5rem;
+	padding: 0 0.5rem 0.2rem 0.5rem;
 	white-space: pre;
 }
 
@@ -72,7 +72,8 @@ figure pre {
 		width: 100%;
 		li, ul {padding: 0.25rem 0;}
 	}
-	pre code {white-space: pre-wrap;}
+	.code pre code {white-space: pre !important;}
+	.formula pre code {white-space: pre-line !important;}
 	blockquote {text-align: center;}
 }
 // == One Column Small Layout == //
