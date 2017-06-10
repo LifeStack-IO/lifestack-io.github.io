@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="yes"?>
+<svg viewBox="0 0 1333.33 266.67" fill="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="a">
+    <path d="M0 0h1333.33v266.67H0V0z"/>
+  </clipPath>
+  <g clip-path="url(#a)">
+    <path fill="none" d="M0 0h1333.33v266.67H0z"/>
+    <path fill="none" d="M12.84 14.04c30.55-5.64 62.47 1.93 93.1-3.26 71.82-12.18 145.58 3.9 218.3 7.6 110.45 5.63 221.2-1.8 331.73-5.43 57.04-1.87 114.2 3.5 171.2 1.1 100.16-4.26 200.63 7.82 300.7 2.16 46.66-2.62 93.53-3.7 140.2-1.07 14.23.8 28.52 0 42.8 0 3.58 0 8.16-3.67 10.7-1.1 5.1 5.2-4.63 14.57-3.22 21.76 5.46 27.72 3.9 57-1.07 84.83-3.4 19 1.63 38.72 5.35 57.64 3.16 16.06-6.28 32.7-4.28 48.95 1.07 8.7 5.3 17.6 3.2 26.1-1.03 4.23-8.62-.23-12.83-1.1-16.3-3.3-31.64-11.17-48.15-13.04-42.9-4.85-86.5 6.14-129.48 2.17-113.7-10.5-228.37 5.24-342.44 1.1-175.05-6.37-350.36 1.67-525.42 7.6-54.54 1.86-109.15 0-163.72 0-19.63 0-39.34-.02-58.86 2.18-8.9 1-22.75 10.3-26.75 2.18-2.78-5.66 5.2-11.52 7.5-17.4 3.58-9.08 1.6-19.7 0-29.36-10.45-63.7-6.42-129.03-6.42-193.6"/>
+    <path stroke="#888" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M12.84 14.04c30.55-5.64 62.47 1.93 93.1-3.26 71.82-12.18 145.58 3.9 218.3 7.6 110.45 5.63 221.2-1.8 331.73-5.43 57.04-1.87 114.2 3.5 171.2 1.1 100.16-4.26 200.63 7.82 300.7 2.16 46.66-2.62 93.53-3.7 140.2-1.07 14.23.8 28.52 0 42.8 0 3.58 0 8.16-3.67 10.7-1.1 5.1 5.2-4.63 14.57-3.22 21.76 5.46 27.72 3.9 57-1.07 84.83-3.4 19 1.63 38.72 5.35 57.64 3.16 16.06-6.28 32.7-4.28 48.95 1.07 8.7 5.3 17.6 3.2 26.1-1.03 4.23-8.62-.23-12.83-1.1-16.3-3.3-31.64-11.17-48.15-13.04-42.9-4.85-86.5 6.14-129.48 2.17-113.7-10.5-228.37 5.24-342.44 1.1-175.05-6.37-350.36 1.67-525.42 7.6-54.54 1.86-109.15 0-163.72 0-19.63 0-39.34-.02-58.86 2.18-8.9 1-22.75 10.3-26.75 2.18-2.78-5.66 5.2-11.52 7.5-17.4 3.58-9.08 1.6-19.7 0-29.36-10.45-63.7-6.42-129.03-6.42-193.6"/>
+    <path fill="#d9d9d9" d="M287.82 69.44V35.02h251.56v34.42zM287.82 122.38V87.95H541.2v34.43zM287.82 178.72V144.3h255.1v34.42zM287.82 231.65v-34.43H541.2v34.43zM561.65 69.44V35.02h158.33v34.42zM561.65 122.38V87.95h159.5v34.43zM561.65 178.72V144.3h160.6v34.42zM561.65 231.65v-34.43h159.5v34.43zM933.03 69.55V35.12h169.1v34.43zM933.03 122.48V88.06h170.33v34.42zM933.03 178.82V144.4h171.53v34.42zM933.03 231.75v-34.42h170.33v34.42zM1120.55 69.55V35.12h158.33v34.43zM1120.55 122.48V88.06h159.5v34.42zM1120.55 178.82V144.4h160.6v34.42zM1120.55 231.75v-34.42h159.5v34.42z" fill-rule="evenodd"/>
+    <path fill="#d9d9d9" d="M743.1 68.14V33.72h169.1v34.42zM743.1 121.07V86.65H913.4v34.42zM743.1 177.4V143h171.5v34.4zM743.1 230.35v-34.43H913.4v34.43z" fill-rule="evenodd"/>
+    
+    <g style="display: none;">
+        <path fill="#d9d9d8" d="M39.6 69.23V34.8H267.5v34.43zM39.6 122.16V87.74h229.52v34.42zM39.6 178.5v-34.42h231.12v34.42zM39.6 231.44V197h229.52v34.44z" fill-rule="evenodd"/>
+        <animate
+            id="old-cells"
+            attributeName="display"
+            values="inline;none;none"
+            keyTimes="0;0.5;1"
+            dur="4s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;">
+        <path fill="none" d="M86.68 35.3c-3.94 12.63-4.87 24.33-6.42 23.56-5.43-2.72-5.75-16.28 0-18.2C89 37.76 90.78 70.5 96.3 63.14c5.47-7.28 2.48-18.13 5.36-26.76"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M86.68 35.3c-3.94 12.63-4.87 24.33-6.42 23.56-5.43-2.72-5.75-16.28 0-18.2C89 37.76 90.78 70.5 96.3 63.14c5.47-7.28 2.48-18.13 5.36-26.76"/>
+        <path fill="none" d="M132.7 36.38c-6.9 8.94-15.7 17.12-19.27 27.82"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M132.7 36.38c-6.9 8.94-15.7 17.12-19.27 27.82"/>
+        <path fill="none" d="M130.55 35.3c.78 8.55 5.4 16.3 7.5 24.62"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M130.55 35.3c.78 8.55 5.4 16.3 7.5 24.62"/>
+        <path fill="none" d="M118.78 50.3c7.4 1.23 14.97 1.06 22.47 1.06"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M118.78 50.3c7.4 1.23 14.97 1.06 22.47 1.06"/>
+        <path fill="none" d="M154.1 41.73c.53 7.48 1.06 14.98 1.06 22.47 0 6.1 1.14-12.16 2.14-18.2.5-3 5.1 3.45 7.5 5.36 3 2.4 2.56-9.63 6.42-9.63l4.28 14.98"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M154.1 41.73c.53 7.48 1.06 14.98 1.06 22.47 0 6.1 1.14-12.16 2.14-18.2.5-3 5.1 3.45 7.5 5.36 3 2.4 2.56-9.63 6.42-9.63l4.28 14.98"/>
+        <path fill="none" d="M192.62 40.66c-.6 7.12-.67 14.48 1.07 21.4"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M192.62 40.66c-.6 7.12-.67 14.48 1.07 21.4"/>
+        <path fill="none" d="M188.34 40.66c9.2-1.84 18.43-4.28 27.82-4.28"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M188.34 40.66c9.2-1.84 18.43-4.28 27.82-4.28"/>
+        <path fill="none" d="M192.62 50.3c6.78 0 13.6.1 20.33 1.06"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M192.62 50.3c6.78 0 13.6.1 20.33 1.06"/>
+        <path fill="none" d="M196.9 64.2c6.78 0 13.9-1.07 20.33 1.08"/>
+        <path stroke="#000001" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M196.9 64.2c6.78 0 13.9-1.07 20.33 1.08"/>
+        <animate
+            id="old-name"
+            attributeName="display"
+            values="inline;none;none"
+            keyTimes="0;0.5;1"
+            dur="4s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;">
+        <path fill="#d9d9d7" d="M41.23 179.12V35.32H269.1v143.8z" fill-rule="evenodd"/>
+        <path fill="#d9d9d7" d="m39.6063 231.4357l0 -34.4252l229.51181 0l0 34.4252z" fill-rule="evenodd"></path>
+        <animate
+            id="new-merged-cell"
+            attributeName="display"
+            values="none;inline;inline"
+            keyTimes="0;0.5;1"
+            dur="4s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;">
+        <desc>New Name</desc>
+        <path fill="none" d="M96.03 89.72c-3.95 12.62-4.87 24.32-6.42 23.54-5.42-2.7-5.75-16.27 0-18.2 8.74-2.9 10.53 29.85 16.06 22.48 5.45-7.27 2.47-18.12 5.35-26.75"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M96.03 89.72c-3.95 12.62-4.87 24.32-6.42 23.54-5.42-2.7-5.75-16.27 0-18.2 8.74-2.9 10.53 29.85 16.06 22.48 5.45-7.27 2.47-18.12 5.35-26.75"/>
+        <path fill="none" d="M142.04 90.8c-6.88 8.93-15.7 17.1-19.26 27.8"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M142.04 90.8c-6.88 8.93-15.7 17.1-19.26 27.8"/>
+        <path fill="none" d="M139.9 89.72c.78 8.54 5.4 16.3 7.5 24.6"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M139.9 89.72c.78 8.54 5.4 16.3 7.5 24.6"/>
+        <path fill="none" d="M128.13 104.7c7.4 1.23 14.97 1.07 22.47 1.07"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M128.13 104.7c7.4 1.23 14.97 1.07 22.47 1.07"/>
+        <path fill="none" d="M163.44 96.14c.53 7.48 1.07 14.97 1.07 22.47 0 6.12 1.15-12.16 2.15-18.18.5-3.03 5.1 3.44 7.5 5.35 3 2.4 2.55-9.63 6.4-9.63.02 0 4.3 14.98 4.3 14.98"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M163.44 96.14c.53 7.48 1.07 14.97 1.07 22.47 0 6.12 1.15-12.16 2.15-18.18.5-3.03 5.1 3.44 7.5 5.35 3 2.4 2.55-9.63 6.4-9.63.02 0 4.3 14.98 4.3 14.98"/>
+        <path fill="none" d="M201.96 95.07c-.6 7.12-.66 14.47 1.07 21.4"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M201.96 95.07c-.6 7.12-.66 14.47 1.07 21.4"/>
+        <path fill="none" d="M197.68 95.07c9.2-1.84 18.44-4.28 27.83-4.28"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M197.68 95.07c9.2-1.84 18.44-4.28 27.83-4.28"/>
+        <path fill="none" d="M201.96 104.7c6.8 0 13.62.1 20.34 1.07"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M201.96 104.7c6.8 0 13.62.1 20.34 1.07"/>
+        <path fill="none" d="M206.25 118.6c6.78 0 13.9-1.07 20.33 1.08"/>
+        <path stroke="#000002" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M206.25 118.6c6.78 0 13.9-1.07 20.33 1.08"/>
+        <animate
+            id="new-name"
+            attributeName="display"
+            values="none;inline;inline"
+            keyTimes="0;0.5;1"
+            dur="4s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+  </g>
+</svg>
