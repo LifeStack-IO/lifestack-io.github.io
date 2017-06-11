@@ -15,7 +15,6 @@
 	}
 	.err { /* Lexer Error */
 		color: #a00;
-		background-color: #faa;
 	}
 	.k { /*  Keyword	*/
 		color: #069;
@@ -204,15 +203,12 @@
 .formula {
 	color: #93a1a1;
   background-color: #002b36;
-	// background-color: #444;
-	// color: $colour-background;
 	code:before {content: "= "; color: $colour-background;}
 	.w {
 		background-color: #444;
 		color: $colour-background;}
 	.err {
-		color: #002b36;
-		background-color: #dc322f;
+		color: #dc322f;
 	}
 	.c, .cd, .cm, .c1, .cs {
 		color: #657b83;

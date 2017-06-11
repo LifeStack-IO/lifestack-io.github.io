@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="yes"?>
+<svg viewBox="0 0 1333.33 266.67" fill="none" stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="a">
+    <path d="M0 0h1333.33v266.67H0V0z"/>
+  </clipPath>
+  <g clip-path="url(#a)">
+    <path fill="none" d="M0 0h1333.33v266.67H0z"/>
+    <path fill="none" d="M12.84 14.04c30.55-5.64 62.47 1.93 93.1-3.26 71.82-12.18 145.58 3.9 218.3 7.6 110.45 5.63 221.2-1.8 331.73-5.43 57.04-1.87 114.2 3.5 171.2 1.1 100.16-4.26 200.63 7.82 300.7 2.16 46.66-2.62 93.53-3.7 140.2-1.07 14.23.8 28.52 0 42.8 0 3.58 0 8.16-3.67 10.7-1.1 5.1 5.2-4.63 14.57-3.22 21.76 5.46 27.72 3.9 57-1.07 84.83-3.4 19 1.63 38.72 5.35 57.64 3.16 16.06-6.28 32.7-4.28 48.95 1.07 8.7 5.3 17.6 3.2 26.1-1.03 4.23-8.62-.23-12.83-1.1-16.3-3.3-31.64-11.17-48.15-13.04-42.9-4.85-86.5 6.14-129.48 2.17-113.7-10.5-228.37 5.24-342.44 1.1-175.05-6.37-350.36 1.67-525.42 7.6-54.54 1.86-109.15 0-163.72 0-19.63 0-39.34-.02-58.86 2.18-8.9 1-22.75 10.3-26.75 2.18-2.78-5.66 5.2-11.52 7.5-17.4 3.58-9.08 1.6-19.7 0-29.36-10.45-63.7-6.42-129.03-6.42-193.6"/>
+    <path stroke="#888" stroke-width="3" stroke-linejoin="round" stroke-linecap="butt" d="M12.84 14.04c30.55-5.64 62.47 1.93 93.1-3.26 71.82-12.18 145.58 3.9 218.3 7.6 110.45 5.63 221.2-1.8 331.73-5.43 57.04-1.87 114.2 3.5 171.2 1.1 100.16-4.26 200.63 7.82 300.7 2.16 46.66-2.62 93.53-3.7 140.2-1.07 14.23.8 28.52 0 42.8 0 3.58 0 8.16-3.67 10.7-1.1 5.1 5.2-4.63 14.57-3.22 21.76 5.46 27.72 3.9 57-1.07 84.83-3.4 19 1.63 38.72 5.35 57.64 3.16 16.06-6.28 32.7-4.28 48.95 1.07 8.7 5.3 17.6 3.2 26.1-1.03 4.23-8.62-.23-12.83-1.1-16.3-3.3-31.64-11.17-48.15-13.04-42.9-4.85-86.5 6.14-129.48 2.17-113.7-10.5-228.37 5.24-342.44 1.1-175.05-6.37-350.36 1.67-525.42 7.6-54.54 1.86-109.15 0-163.72 0-19.63 0-39.34-.02-58.86 2.18-8.9 1-22.75 10.3-26.75 2.18-2.78-5.66 5.2-11.52 7.5-17.4 3.58-9.08 1.6-19.7 0-29.36-10.45-63.7-6.42-129.03-6.42-193.6"/>
+    
+    <g style="display: inline;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M37.52 117.58c2.94 20.96 6 41.86 8.58 63"/>
+        <path d="M76.98 110.58c.85 24.5-6.8 31.63 1.7 49 5.73 11.68 11.92-1.4 13.74-17.5 2.03-17.97-17.08-22.8-25.74-17.5"/>
+        
+        <animate
+            id="cell_1"
+            attributeName="display"
+            values="none;inline;inline;inline;inline;inline;inline;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+            
+    </g>
+
+    <g style="display: none;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M176.27 100.08c1.45 22.1 3.43 44.22 3.43 66.5"/>
+        <path d="M193.43 100.08c9.43-5.25 9.16-12.98 18.87-10.5 4.25 1.08-2.87 6.58-5.15 14-5.2 17.02 21.56 31.05 17.16 49-4.47 18.26-17.4 20.18-25.73 31.5"/>
+        
+        <animate
+            id="cell_2"
+            attributeName="display"
+            values="none;none;inline;inline;inline;inline;inline;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M345.42 111.35c-8.57 5.25-18.9-7.42-17.15 10.5 2.07 21.1 29.48 37.46 20.6 49-7.97 10.34-18.1 19.2-18.88 0-1.1-26.5 36.65-56.55 24-63"/>
+        
+        <animate
+            id="cell_3"
+            attributeName="display"
+            values="none;none;none;inline;inline;inline;inline;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M456.78 123.34c12-12.25 10.63-22.4 24.02-24.5 5.2-.82.8 11.7-1.72 21-1.86 6.84 2.15 16.12 5.15 21 3.9 6.38 7.57 8.6 5.14 17.5-5.1 18.76-19.2 17.73-29.16 24.5"/>
+        
+        <animate
+            id="cell_4"
+            attributeName="display"
+            values="none;none;none;none;inline;inline;inline;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M599.92 100.08c1.44 22.1 3.43 44.22 3.43 66.5"/>
+        <path d="M634.15 95.8c-8.57 5.24-18.9-7.43-17.15 10.5 2.07 21.1 29.48 37.44 20.6 49-7.97 10.33-18.1 19.18-18.88 0-1.1-26.52 36.66-56.56 24-63"/>
+        
+        <animate
+            id="cell_5"
+            attributeName="display"
+            values="none;none;none;none;none;inline;inline;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M791.76 83.53c-6.6 2.6-18.4 20.04-14.93 30.22 5.08 14.97 14.45.12 15.4 19.04 1.02 19.7-19.5 18.3-29.63 21.78"/>
+        <path d="M727.4 106.53c12-12.25 10.63-22.4 24-24.5 5.2-.82.83 11.7-1.7 21-1.87 6.84 2.15 16.1 5.14 21 3.9 6.38 7.58 8.58 5.15 17.5-5.12 18.75-19.2 17.72-29.17 24.5"/>
+        
+        <animate
+            id="cell_6"
+            attributeName="display"
+            values="none;none;none;none;none;none;inline;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+    <g style="display: none;" stroke="#000" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M869.44 122.7c12.86-14 11.17-26.14 25.72-28 6.06-.76 3.53 12.7 1.72 24.5-2.77 18.08-9.06 12.75-10.3 31.5-1.04 16.12 14.4 19.3 22.3 17.5"/>
+        <path d="M919.18 105.2c8.9-4.52 27.45-22.2 27.45-3.5 0 17.4-8.93 35.77-12 52.52"/>
+        
+        <animate
+            id="cell_7"
+            attributeName="display"
+            values="none;none;none;none;none;none;none;inline;inline;none;none"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+            
+    </g>
+    
+    <g style="display: none;" stroke="#00f" stroke-width="8" stroke-linejoin="round" stroke-linecap="butt">
+        <path d="M969.4 159.44l55.2-9.94 108.76 30.82L1246.18 78.9l51.95 25.84"/>
+        
+        <animate
+            id="sparkline"
+            attributeName="display"
+            values="none;none;none;none;none;none;none;none;inline;inline;inline"
+            keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"
+            dur="4.5s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+    </g>
+    
+  </g>
+</svg>

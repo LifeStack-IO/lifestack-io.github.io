@@ -1,0 +1,141 @@
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-miterlimit="10" viewBox="0 0 1334.65 274.48" stroke-linecap="square" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <clipPath id="a">
+    <path d="M0 0h1334.65v274.48H0V0z"/>
+  </clipPath>
+  <g fill-rule="evenodd" clip-path="url(#a)">
+      <g stroke="#000" stroke-width="2" stroke-linejoin="bevel" stroke-linecap="round">
+        <g style="display: none;">
+          <path d="M42.7 149.62l20.1 40.74 M62.8 190.36l19.62-46.77 M82.42 143.6l20.12 40.73" />
+          <path d="M102.54 184.33l20.12-21.13 M122.66 163.2l20.12-2.5 M142.78 160.7l19.62-1.02"/>
+          <animate
+            id="part_1"
+            attributeName="display"
+            values="none;inline;inline;inline;inline;inline;inline;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M162.4 159.68l20.1 1 M182.5 160.7l20.13-7.56 M202.63 153.14l19.62 19.12"/>
+          <path d="M222.25 172.26l20.1-13.58 M242.36 158.68l20.12-1.5 M262.48 157.17l20.12 8.55"/>
+          <animate
+            id="part_2"
+            attributeName="display"
+            values="none;none;inline;inline;inline;inline;inline;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M282.6 165.72l19.6-29.68 M302.2 136.04l20.13-9.55 M322.33 126.5l20.12 54.8"/>
+          <path d="M342.45 181.3l19.62-47.77 M362.07 133.53l20.1 15.6 M382.18 149.12l20.12 1"/>
+          <animate
+            id="part_3"
+            attributeName="display"
+            values="none;none;none;inline;inline;inline;inline;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M402.3 150.13l20.12-28.17 M422.42 121.96l19.6-2 M442.03 119.95l20.12 46.78"/>
+          <path d="M462.15 166.72l20.12-8.04 M482.27 158.68L502.4 130 M502.4 130l19.6-20.6"/>
+          <animate
+            id="part_4"
+            attributeName="display"
+            values="none;none;none;none;inline;inline;inline;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M522 109.4l20.13 20.6 M542.12 130l20.12-2.5 M562.24 127.5l19.62 26.15"/>
+          <path d="M581.85 153.65l20.13-18.6 M601.98 135.04l20.1 24.14 M622.1 159.18l20.1-27.66"/>
+          <animate
+            id="part_5"
+            attributeName="display"
+            values="none;none;none;none;none;inline;inline;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M642.2 131.52l19.63 5.03 M661.83 136.55l20.12 16.6 M681.95 153.14l20.1-5.02"/>
+          <path d="M702.06 148.12l19.62-.5 M721.68 147.6l20.12-35.2 M741.8 112.4l20.1 2.52"/>
+          <animate
+            id="part_6"
+            attributeName="display"
+            values="none;none;none;none;none;none;inline;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M761.9 114.92l20.13-6.54 M782.03 108.38L801.65 128 M801.65 128l20.1-21.63"/>
+          <path d="M821.76 106.37l20.12 31.7 M841.88 138.06l19.62 2 M861.5 140.07l20.12-1"/>
+          <animate
+            id="part_7"
+            attributeName="display"
+            values="none;none;none;none;none;none;none;inline;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M881.62 139.06l20.1 2.5 M901.73 141.58l20.12-31.7 M921.85 109.9l19.62 11.06"/>
+          <path d="M941.47 120.96l20.1-31.7 M961.58 89.27l20.12 19.6 M981.7 108.88l19.62 26.66"/>
+          <animate
+            id="part_8"
+            attributeName="display"
+            values="none;none;none;none;none;none;none;none;inline;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M1001.32 135.54l20.12 1 M1021.44 136.55l20.12-25.65 M1041.55 110.9l20.13-22.63"/>
+          <path d="M1061.68 88.27l19.6 31.68 M1081.3 119.95l20.1-39.23 M1101.4 80.72l20.13 7.55"/>
+          <animate
+            id="part_9"
+            attributeName="display"
+            values="none;none;none;none;none;none;none;none;none;inline;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <g style="display: none;">
+          <path d="M1121.53 88.27l19.6 37.2 M1141.14 125.48l20.12-52.3 M1161.26 73.18l20.12 5.03"/>
+          <path d="M1181.38 78.2l20.12-11.56 M1201.5 66.64l19.6 58.34 M1221.1 124.98l20.13-44.26"/>
+          <path d="M1241.23 80.72l20.12-15.1 M1261.35 65.63l20.1 16.1"/>
+          <animate
+            id="part_10"
+            attributeName="display"
+            values="none;none;none;none;none;none;none;none;none;none;inline;inline"
+            keyTimes="0;0.05;0.1;0.15;0.2;0.25;0.3;0.35;0.4;0.45;0.5;1"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+        </g>
+        <animate
+            id="sparkline"
+            attributeName="stroke-width"
+            from="1"
+            to="6"
+            dur="10s"
+            begin="0.5s"
+            repeatCount="indefinite" />
+      </g>
+    
+    <path stroke="#888" stroke-width="3" d="M12.84 14.04c30.55-5.64 62.47 1.93 93.1-3.26 71.82-12.18 145.58 3.9 218.3 7.6 110.45 5.63 221.2-1.8 331.73-5.43 57.04-1.87 114.2 3.5 171.2 1.1 100.16-4.26 200.63 7.82 300.7 2.16 46.66-2.6 93.53-3.7 140.2-1 14.23.8 28.52 0 42.8 0 3.58 0 8.16-3.6 10.7-1.1 5.1 5.2-4.63 14.6-3.22 21.8 5.46 27.76 3.9 57-1.07 84.87-3.4 19 1.63 38.7 5.35 57.64 3.16 16.07-6.28 32.7-4.28 48.96 1.07 8.7 5.3 17.6 3.2 26.1-1.03 4.2-8.62-.25-12.83-1.1-16.3-3.3-31.64-11.2-48.15-13.06-42.9-4.87-86.5 6.12-129.48 2.15-113.7-10.5-228.4 5.26-342.5 1.1-175.1-6.35-350.4 1.7-525.4 7.6-54.6 1.88-109.2 0-163.7 0-19.7 0-39.4 0-58.9 2.2-8.9 1-22.8 10.3-26.8 2.18-2.8-5.64 5.2-11.5 7.5-17.4 3.55-9.06 1.6-19.7 0-29.34C10.9 144 14.9 78.7 14.9 14.1" stroke-linejoin="round" stroke-linecap="butt"/>
+  </g>
+</svg>
