@@ -40,13 +40,27 @@ This can be used on data such as the following table, then perform the condition
 | John | | Doe | JohnDoe
 | Jane | Louise | Doe | JaneLouiseDoe
 
-###### Case Sensitivity
-
-To handle case-insensitive row duplicate matching, convert all your keys to __UPPERCASE__, using the [upper][2] function. The formula looks like this.
+Alternatively, you can _avoid_ having to have a __key__ column by using the concatenation operator and [sumproduct][3] function in your custom conditional format formula (applying the conditional format to both the first and family name columns), like this:
 
 {% highlight puppet %}
-UPPER(CONCATENATE(A1:C1))
+SUMPRODUCT(IF($A:$A&$C:$C=$A1&$C1,1,0))>1
+{% endhighlight %}{:class="formula"}
+
+###### Case Sensitivity
+
+By default, these duplicate matching formulas are case-insensitive. To handle case-sensitive row duplicate matching, make use of the the [exact][4] function as follows:
+
+{% highlight puppet %}
+SUMPRODUCT((--EXACT($A1&$C1,$A:$A&$C:$C)))>1
+{% endhighlight %}{:class="formula"}
+
+These last two formulas will also work with an arbitary number of columns to match on, for example we can expand the match to __three__ as follows:
+
+{% highlight puppet %}
+SUMPRODUCT((--EXACT($A1&$B1&$C1,$A:$A&$B:$B&$C:$C)))>1
 {% endhighlight %}{:class="formula"}
 
 [1]: https://support.google.com/docs/answer/78413 "Use conditional formatting rules in Google Sheets"
 [2]: https://support.google.com/docs/answer/3094219 "How to use the UPPER function"
+[3]: https://support.google.com/docs/answer/3094294 "How to use the SUMPRODUCT function"
+[4]: https://support.google.com/docs/answer/3094073 "How to use the EXACT function"
