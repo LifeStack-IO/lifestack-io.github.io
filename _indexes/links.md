@@ -14,7 +14,7 @@ image_fallback: img/links.png
 {% if site.data.meta[category].description %}_{{ site.data.meta[category].description }}_{% endif %}
 {% assign links_by_category = site.links | where: "category", category | sort: "title"  %}
 {% for link in links_by_category  %}
-###### [{{ link.title }}]({{ link.link }}){:target="_new"}
+###### [{{ link.title }}]({{ link.link }}){:target="_blank"}
 {{ link.content }}
 {% assign tags = link.tags %}
 <div class="finally">

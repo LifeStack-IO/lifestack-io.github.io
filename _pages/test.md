@@ -6,7 +6,7 @@ hidden: true
 ---
 {% include lead.md %}
 
-# Testing [Markdown][1]{:target='_new'}[^h1]
+# Testing [Markdown][1]{:target='_blank'}[^h1]
 
 This page is a generic test document, demonstrating what [Markdown][2] is capable of. Deviations from the original [syntax][3], using [Kramdown][5] / [PHP Markdown Extra][4] will be indicated[^KD]. It is used to verify styling and legibility, using a wide range of stylistic devices.
 

@@ -40,7 +40,7 @@ Simply entitle the first column ([Field Name]) with the name of the 'discriminat
 
 ###### Add the Code
 
-You'll need to open the [Script Editor](https://developers.google.com/apps-script/guides/bound){:target="_new"} from __Tools__ -> __Script Editor__ in your Google Sheet. Then you can paste the two sections of code in from below. Explanatory comments are provided within the code, to make it easier to understand and change within the script editor itself.
+You'll need to open the [Script Editor](https://developers.google.com/apps-script/guides/bound){:target="_blank"} from __Tools__ -> __Script Editor__ in your Google Sheet. Then you can paste the two sections of code in from below. Explanatory comments are provided within the code, to make it easier to understand and change within the script editor itself.
 
 {% highlight javascript %}
 // Change this variable value to match the name of the 'extra' sheet/tab holding the notification table.
@@ -126,7 +126,7 @@ function handle_onSubmit(e) {
 
 ###### Set Up the Trigger
 
-Once your code has been pasted in and saved, you now need to create a [trigger](https://developers.google.com/apps-script/guides/triggers/events){:target="_new"} to run the code every time a form response is submitted. You can do this in the script editor by selecting __Resources__ -> __Current project's triggers__. Then select _handle_onSubmit_ to run when the form is submitted. Email notifications will be sent from the account you are using to do this, so at this point you'll be asked to authorise the code to send email on your behalf.
+Once your code has been pasted in and saved, you now need to create a [trigger](https://developers.google.com/apps-script/guides/triggers/events){:target="_blank"} to run the code every time a form response is submitted. You can do this in the script editor by selecting __Resources__ -> __Current project's triggers__. Then select _handle_onSubmit_ to run when the form is submitted. Email notifications will be sent from the account you are using to do this, so at this point you'll be asked to authorise the code to send email on your behalf.
 
 ### Finally
 

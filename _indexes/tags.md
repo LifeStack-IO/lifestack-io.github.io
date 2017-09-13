@@ -72,7 +72,7 @@ image_fallback: img/tags.png
 {% for link in sorted_links %}
 
 {% if link.tags contains tag_name %}
-[{{ link.title }}]({{ link.link }}){:target="_new"} - {% if link.lead %}{{ link.lead }}{% else %}{{ link.content | strip_html | truncatewords: 10 , "" }}{% endif %}&nbsp;[...]({{ link.url }})
+[{{ link.title }}]({{ link.link }}){:target="_blank"} - {% if link.lead %}{{ link.lead }}{% else %}{{ link.content | strip_html | truncatewords: 10 , "" }}{% endif %}&nbsp;[...]({{ link.url }})
 {% endif %}
 
 {% endfor %}

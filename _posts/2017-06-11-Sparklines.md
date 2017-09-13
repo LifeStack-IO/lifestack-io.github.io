@@ -16,9 +16,9 @@ asset_prefix: qQv7K
 
 ## Sparklines?
 
-A [sparkline][1]{:target="_new"} is a small, spreadsheet cell-sized, graph. It is typically a line chart, but can also be a bar / column version. They are used to quickly visualise a series of data points (e.g. marks over time) in a way that allows fast comprehension of data patterns (e.g gradual improvement) at a glance. Most people find that graphical comprehension is much easier and faster than reading a row of numbers.
+A [sparkline][1]{:target="_blank"} is a small, spreadsheet cell-sized, graph. It is typically a line chart, but can also be a bar / column version. They are used to quickly visualise a series of data points (e.g. marks over time) in a way that allows fast comprehension of data patterns (e.g gradual improvement) at a glance. Most people find that graphical comprehension is much easier and faster than reading a row of numbers.
 
-Sparklines are a native feature of Google Sheets, accessible via the [sparkline][1]{:target="_new"} formula, which means they work seamlessly on the web and using mobile apps. Like other formulas, this will let you supply data in the form of a range of cells (e.g. a row, or column) or values from another function (this is useful if you have a non-contiguous dataset that you want to visualise). There are also a wide range of options you can also supply to format your sparkline in exactly the way that you want.
+Sparklines are a native feature of Google Sheets, accessible via the [sparkline][1]{:target="_blank"} formula, which means they work seamlessly on the web and using mobile apps. Like other formulas, this will let you supply data in the form of a range of cells (e.g. a row, or column) or values from another function (this is useful if you have a non-contiguous dataset that you want to visualise). There are also a wide range of options you can also supply to format your sparkline in exactly the way that you want.
 
 ## A simple example
 
@@ -50,7 +50,7 @@ As you can see from the above illustration, line charts work best for larger dat
 
 ### Customising the options
 
-The second argument (which is optional) that you can supply to the sparkline function is _options_. Unusually for a spreadsheet, it takes the formation of a [JSON][3]{:target="_new"}-style object that is a series of __name__ and __value__ pairs. The most important of which are in the table below.
+The second argument (which is optional) that you can supply to the sparkline function is _options_. Unusually for a spreadsheet, it takes the formation of a [JSON][3]{:target="_blank"}-style object that is a series of __name__ and __value__ pairs. The most important of which are in the table below.
 
 |---
 | Name | Values | Details

@@ -16,7 +16,7 @@ asset_prefix: erf54
 
 ## Why?
 
-Taking a little time to set up a [sheets-based][1]{:target="_new"} markbook at the start of the year will pay dividends in terms of __productivity__, __organisation__ and __time-saving__ through the year (especially when it comes to reporting deadlines!). Few people would doubt the importance of using a markbook to track student progress, but a well structured and organised spreadsheet will just make this _traditional tool_ much more powerful and easier to keep updated.
+Taking a little time to set up a [sheets-based][1]{:target="_blank"} markbook at the start of the year will pay dividends in terms of __productivity__, __organisation__ and __time-saving__ through the year (especially when it comes to reporting deadlines!). Few people would doubt the importance of using a markbook to track student progress, but a well structured and organised spreadsheet will just make this _traditional tool_ much more powerful and easier to keep updated.
 
 ## Setting it up
 
@@ -40,7 +40,7 @@ You will need two types of columns in your markbook, the first are for informati
 
 For the student information, three columns should be considered the absolute minimum. You will need (normally your _first column_) a __unique identifier__ for the student to help facilitate submission or aggregation of marks in the future (students may share the same name). Different organisations may call this identifier by a different label (Student Id, Student Number, Enrolment or Admission Number etc.) but it should be widely recognisable and understood within the organisation.
 
-When choosing which identifier to use, you __should not use__ identifiers that are considered _privileged_ or _sensitive_ information (typically those that have a national meaning, such as a [UPN][4]{:target="_new"} in the UK) and make sure that identifier is one that has been generated and assigned by your organisation. Not only does this mean that unwelcome changes are unlikely, but also it will facilitate easier information movement around your systems.
+When choosing which identifier to use, you __should not use__ identifiers that are considered _privileged_ or _sensitive_ information (typically those that have a national meaning, such as a [UPN][4]{:target="_blank"} in the UK) and make sure that identifier is one that has been generated and assigned by your organisation. Not only does this mean that unwelcome changes are unlikely, but also it will facilitate easier information movement around your systems.
 
 Some people prefer to [concatenate][5] names into a single column (e.g. John Doe, or Doe, Jane) rather than having an individual columns for their family and given names. This comes down to __personal preference__, and whether you wish to be able to sort on individual 'parts' of the name. Remember that in sheets you can sort on any column you wish (and change it whenever you would like), so you can order your markbook by _name_, _attainment_ or even _seating position_.
 
@@ -62,7 +62,7 @@ At this point you're ready to add your class lists, which can be done in a numbe
 
 If you have easy access to your MIS or school database, the most simple way to import your classes is to __copy__ and __paste__ from there. If you are able to access a webpage with the student list for your particular class, all you need to do is highlight the data, then copy it *ctrl-c*{:.kb-shortcut}. Then return to your sheet and paste it *ctrl-v*{:.kb-shortcut}. You can remove any unwanted formatting or borders using the format tools in the toolbar at the top of the sheet. Whilst this method is both quick and easy, the main drawback is that the imported data is static. When it changes in your MIS (names or attainment grades updated) these changes are not reflected in your markbook.
 
-As an alternative, some organisations may provide a __master sheet__ with all the class or student data in an accessible format. If this is the case in your school, you can use a number of different [functions][13]{:target="_new"} to access and use this data. You will first need to ask for the _spreadsheet id_ and sheet name of the data spreadsheet in order to use it. Your support team or data manager should be able to supply this. The master spreadsheet is simply a normal spreadsheet that all your staff will have 'read' access to. A simplified version of this master data might look something like this:
+As an alternative, some organisations may provide a __master sheet__ with all the class or student data in an accessible format. If this is the case in your school, you can use a number of different [functions][13]{:target="_blank"} to access and use this data. You will first need to ask for the _spreadsheet id_ and sheet name of the data spreadsheet in order to use it. Your support team or data manager should be able to supply this. The master spreadsheet is simply a normal spreadsheet that all your staff will have 'read' access to. A simplified version of this master data might look something like this:
 
 |---
 | Id | Given Name | Family Name | Class
@@ -72,7 +72,7 @@ As an alternative, some organisations may provide a __master sheet__ with all th
 | 1002 | A | Person | 11EN
 | 1003 | Another | Person | 11EN
 
-You can then [import][14]{:target="_new"} the list of students for a particular class by entering the following formula. You will need to replace the __placeholders__ with your supplied ID and sheet name. The first time you use the [importrange][14]{:target="_new"} function you will need to authorise access to the sheet from which you are importing the data. You can do this by clicking on the button that will appear when you hover over the cell.
+You can then [import][14]{:target="_blank"} the list of students for a particular class by entering the following formula. You will need to replace the __placeholders__ with your supplied ID and sheet name. The first time you use the [importrange][14]{:target="_blank"} function you will need to authorise access to the sheet from which you are importing the data. You can do this by clicking on the button that will appear when you hover over the cell.
 
 {% highlight puppet %}
 QUERY(IMPORTRANGE("SPREADSHEET_ID", "SHEET_NAME!A:D"), "select * where Col4 = '11EN'")
