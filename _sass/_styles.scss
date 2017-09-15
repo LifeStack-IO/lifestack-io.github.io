@@ -125,6 +125,17 @@ blockquote {
 		margin-left: 25%;
 		margin-right: 25%;
 	}
+	svg {
+		path.sparkline {
+			stroke: $colour-general;
+			stroke-width: 3.0;
+			stroke-opacity: 1.0;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10.0;
+			fill: none;
+		}
+	}
 }
 
 #markdown-toc {
