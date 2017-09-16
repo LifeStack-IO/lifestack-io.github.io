@@ -31,11 +31,11 @@ To do this you will need a free [Github](https://github.com/, "Github Homepage")
 
 ###### Taxonomy
 
-All the posted content on this site is both categorised & tagged: this is the '_structure_' or [taxonomy](https://en.wikipedia.org/wiki/Taxonomy_(general)){:target="_blank"} of the site. The categories (articles, tutorials, links etc.) reflect the _type_ of content. The tags refer to subjects covered by the content. You can easily __navigate__ by either category (using the navigation menu or links at the top of each post) or from the [tags](../tags) page.
+All the posted content on this site is both categorised & tagged: this is the '_structure_' or [taxonomy](https://en.wikipedia.org/wiki/Taxonomy_(general)){:target="_blank"} of the site. The categories (articles, tutorials, links etc.) reflect the _type_ of content. The tags refer to subjects covered by the content. You can easily __navigate__ by either category (using the navigation menu or links at the top of each post) or from the [tags](/tags) page.
 
 ### Design
 
-Current version: __{{ site.version }}__. A [test]({{ site.baseurl }}test){:target="_blank"} page is provided to illustrate the different types of formatting used across the site.
+Current version: __{{ site.version }}__. A [test](/test){:target="_blank"} page is provided to illustrate the different types of formatting used across the site.
 
 ###### Typography
 
