@@ -35,6 +35,7 @@ hr {
 	height: 1px;
 	background: $colour-highlight;
 	background-image: linear-gradient(to right, rgba($colour-background, 1), rgba($colour-background, 0.8), rgba($colour-highlight, 1), rgba($colour-background, 0.8), rgba($colour-background, 1));
+	overflow: visible;
 	&:after {
 		content: "◄ ♥ ►";
 		display: inline-block;
