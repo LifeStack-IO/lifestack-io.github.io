@@ -1,7 +1,7 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta name="description" content="{{ site.description }}">	
+		<meta name="description" content="{% if (page.title and page.title != 'Home') or page.short_title %}{% if page.short_title %}{{ page.short_title | replace: '_', '' }}{% else %}{{ page.title }}{% endif %} - {% if page.lead %}{{ page.lead | replace: '_', '' }}{% else %}{{ site.description }}{% endif %}{% else %}{{ site.description }}{% endif %}">
 		
 		<!-- Enable responsiveness on mobile devices-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
