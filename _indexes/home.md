@@ -4,13 +4,11 @@ title: Home
 permalink: /
 ---
 
-_{{ site.description }}_
+Welcome to __LifeStack__. We write _clear_, _helpful_ and _informative_ content to help you get the very best from technology. Below are our the most __recent posts__, including [articles]({{ site.baseurl }}all/article), [tutorials]({{ site.baseurl }}all/tutorial), [snippets]({{ site.baseurl }}snippets) & [links]({{ site.baseurl }}links). Looking for something else? You can find __everything__ in the [archive](/all), or by clicking on any [tags](/tags). Or take a moment to [read more]({{ site.baseurl }}about) about our vision, approach and philosophy!
+{:.lead}
 
-The most __recent posts__ are below, but you can find everything in the [archive](/archive). All the content is [tagged](/tags) but you can also browse [links](/links) and [snippets](/snippets) too.
-
-{% assign categories = site.posts | map: "category" | uniq %}
-{% for category in categories %}
-{% assign posts_by_categories = site.posts | where: "category", category %}
+{% assign _recent = "" | split: "" %}{% assign _recent_snippets = site.snippets | sort: 'date' | reverse | limit:10 %}{% assign _recent_posts = site.posts | sort: 'date' | reverse | limit:10 %}{% assign _recent_links = site.links | sort: 'date' | reverse | limit:10 %}{% for _snippet in _recent_snippets %}{% assign _recent = _recent | push: _snippet %}{% endfor %}{% for _post in _recent_posts %}{% assign _recent = _recent | push: _post %}{% endfor %}{% for _link in _recent_links %}{% assign _recent = _recent | push: _link %}{% endfor %}{% assign _recent = _recent | sort: 'date' | reverse | limit:10 %}{% assign categories = _recent | map: "category" | uniq %}{% for category in categories %}
+{% assign posts_by_categories = _recent | where: "category", category %}
 
 ###### [{{ site.data.meta[category].name }}]({{ site.baseurl }}all/{{ category }})
 

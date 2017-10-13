@@ -8,7 +8,7 @@ image_fallback: img/archive.png
 ---
 {% include lead.md %}
 
-{% for post in site.posts %}
+{% assign _all = "" | split: "" %}{% for _snippet in site.snippets %}{% assign _all = _all | push: _snippet %}{% endfor %}{% for _post in site.posts %}{% assign _all = _all | push: _post %}{% endfor %}{% for _link in site.links %}{% assign _all = _all | push: _link %}{% endfor %}{% assign _all = _all | sort: 'date' | reverse %}{% for post in _all %}
 {% unless post.next %}
 #### {{ post.date | date: "%B, %Y" }}
 {% else %}

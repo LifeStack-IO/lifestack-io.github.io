@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: tutorial
-lead: How to use the find function with an array of values to search for
+lead: How to use the __FIND__ function with an array of values to _search_ for individual characters or words.
 published: true
+date: 2017-06-11
 ---
 {% include lead.md %}
 

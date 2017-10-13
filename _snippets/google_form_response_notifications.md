@@ -9,8 +9,9 @@ tags:
 - google
 - sheets
 category: coding
-lead: Use Google Apps Script to send notifications to different recipients based on a form value (e.g. organisation)
+lead: Use Google Apps Script to _send notifications_ to __different recipients__ based on a form value (e.g. organisation).
 published: true
+date: 2017-08-20
 ---
 {% include lead.md %}
 

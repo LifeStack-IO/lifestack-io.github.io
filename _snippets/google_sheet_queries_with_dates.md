@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: tutorial
-lead: Use the QUERY function to return results before, on or after a certain date
+lead: Use the __QUERY__ function to return results before, on or after a _certain_ or _relative_, date.
 published: true
+date: 2017-10-13
 ---
 {% include lead.md %}
 

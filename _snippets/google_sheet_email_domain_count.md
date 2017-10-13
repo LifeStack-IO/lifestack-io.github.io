@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: functions
-lead: How to create a summary list of unique email domains from a list of email addresses, and count how many times they appear in that list.
+lead: How to create a summary list of _unique_ email __domains__ from a list of email addresses, and _count_ how many times they appear in that list.
 published: true
+date: 2017-10-07
 ---
 {% include lead.md %}
 

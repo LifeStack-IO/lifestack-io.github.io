@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: tutorial
-lead: How to aggregate data from different rows and columns for further processing
+lead: How to __aggregate data__ from _different_ rows and columns for further processing.
 published: true
+date: 2017-09-13
 ---
 {% include lead.md %}
 

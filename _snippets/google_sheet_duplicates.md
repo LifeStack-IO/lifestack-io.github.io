@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: tutorial
-lead: How to identify duplicate values or rows in Google Sheets
+lead: How to identify __duplicate__ _values_ or _rows_ in Google Sheets.
 published: true
+date: 2017-06-11
 ---
 {% include lead.md %}
 

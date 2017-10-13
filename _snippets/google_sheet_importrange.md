@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: functions
-lead: Use the IMPORTRANGE function in Google Sheets to aggregate and link information across spreadsheets.
+lead: Use the __IMPORTRANGE__ function in Google Sheets to _aggregate_ and _link_ information across spreadsheets.
 published: true
+date: 2017-06-08
 ---
 {% include lead.md %}
 

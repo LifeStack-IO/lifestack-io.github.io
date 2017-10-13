@@ -23,6 +23,8 @@ functions:
   name: Spreadsheet Functions
   description: Examples of how to use functions to get the best out of your spreadsheets
   hidden: true
+  image: img/coding_header.svg
+  image_fallback: img/coding_leader.png
   
 google:
   name: Google Apps

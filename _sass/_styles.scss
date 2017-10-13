@@ -1,5 +1,11 @@
 // -- Regular Elements -- //
-p, figure {margin: 0.5em 0;}
+p, figure {
+	margin: 0.5em 0;
+	&.lead {
+		margin: 1em 0 2em 0;
+		color: $colour-general-text;
+	}
+}
 
 p + figure {margin: -0.3em 0 0.7em 0;}
 
@@ -28,7 +34,7 @@ ol li:before {
 ul li:before {content: "►";}
 
 hr {
-	margin: 0.5rem 0;
+	margin: 0.5rem 0 3rem 0;
 	padding: 0;
 	border: none;
 	text-align: center;

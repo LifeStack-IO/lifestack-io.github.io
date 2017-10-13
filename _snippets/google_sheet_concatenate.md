@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: functions
-lead: How to 'add' or 'combine' text or cells in Google Sheets
+lead: How to _add_ or _combine_ text or cells in Google Sheets.
 published: true
+date: 2017-06-08
 ---
 {% include lead.md %}
 

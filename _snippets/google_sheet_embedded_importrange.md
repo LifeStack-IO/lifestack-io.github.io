@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: functions
-lead: How to embed the IMPORTRANGE function within other functions in Google Sheets.
+lead: How to embed the __IMPORTRANGE__ function within other functions in Google Sheets.
 published: true
+date: 2017-06-10
 ---
 {% include lead.md %}
 

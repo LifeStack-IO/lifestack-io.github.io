@@ -9,8 +9,9 @@ tags:
 - google
 - sheet
 category: functions
-lead: Splitting text values into constituent parts
+lead: Breaking down text values into their _constituent parts_ using the __SPLIT__ function.
 published: true
+date: 2017-06-07
 ---
 {% include lead.md %}
 

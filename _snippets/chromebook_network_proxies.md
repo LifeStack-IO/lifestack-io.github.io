@@ -10,7 +10,7 @@ tags:
 - google
 - networks
 category: tutorial
-lead: If you are using a Chromebook in a school environment, you may need to make a few small adjustments to your network settings to successfully connect via a proxy server.
+lead: If you are using a Chromebook in a school environment, you may need to make a few small adjustments to your network settings to __successfully connect__ via a _proxy server_.
 published: true
 date: 2017-09-01
 ---

@@ -35,9 +35,9 @@ permalink:						pretty
 
 # Setup
 title:								"LifeStack"
-byline:								"Training, thoughts, ideas, code & tutorials"
+byline:								"Training, thoughts, ideas & code"
   
-description:					"Articles, tutorials, reviews & guidance. Information and advice to help you get the most from technology."
+description:					"Tutorials, articles & guidance helping you get the most from technology."
 url:									lifestack.io
 baseurl:							""
 author:

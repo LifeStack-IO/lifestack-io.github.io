@@ -23,7 +23,7 @@ In computer science, a stack has a particular [technical meaning][18]. More rece
 
 ### Content
 
-{% if site.posts.first %}Most recent published content: __[{{ site.posts.first.date | date_to_string }} - {{ site.posts.first.title }}]({{site.posts.first.url}})__{% endif %}
+{% assign _first_snippet = site.snippets | sort: 'date' | reverse | first %}{% assign _first_post = site.posts | sort: 'date' | reverse | first %}{% if _first_post.date >= _first_snippet.date %}{% assign _first =  _first_post %}{% else %}{% assign _first = _first_snippet %}{% endif %}{% if _first %}Most recent published content: __[{{ _first.date | date_to_string }} - {{ _first.title }}]({{_first.url}})__{% endif %}
 
 All the content for this site is original work, the culmination of work and experience with a wide range of technologies. Everything is authored in a simple text-based language called [Markdown][1], which was originally proposed and design by [Jon Gruber][2]. It is a simple format that allows for a clean separation of these words from their style and presentation on your screen. Like technology itself, all [posts][3] on this site should be considered as '_work in progress_' and are available online (under an open-source license - see below) for amendment by anyone who would like to propose changes or improvements.
 
