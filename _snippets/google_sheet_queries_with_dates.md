@@ -11,7 +11,7 @@ tags:
 category: tutorial
 lead: Use the __QUERY__ function to return results before, on or after a _certain_ or _relative_, date.
 published: true
-date: 2017-10-13
+date: 2017-10-12
 ---
 {% include lead.md %}
 

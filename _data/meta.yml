@@ -69,3 +69,7 @@ sheet:
 networks:
   name: Networks
   description: How everything talks to everything else, what can go wrong and how you can make it better
+
+javascript:
+  name: Javascript
+  description: Coding with the most popular language on the web

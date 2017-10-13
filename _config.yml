@@ -55,7 +55,7 @@ collections:
     permalink: /:collection/:path/
     
 # Custom variables
-version:							"1.0.7"
+version:							"1.0.8"
 read_speed:						160
 launched:							"2014"
 
