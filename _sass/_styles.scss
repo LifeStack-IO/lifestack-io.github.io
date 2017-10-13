@@ -3,7 +3,13 @@ p, figure {
 	margin: 0.5em 0;
 	&.lead {
 		margin: 1em 0 2em 0;
-		color: $colour-general-text;
+		color: $colour-highlight-dark;
+		a {color: $colour-emphasis;}
+	}
+	.brand {
+		color: $colour-emphasis !important;
+		&:before {content: "[ ";}
+		&:after {content: " ]";}
 	}
 }
 
