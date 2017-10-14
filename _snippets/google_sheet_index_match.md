@@ -11,7 +11,7 @@ tags:
 category: functions
 lead: How to link data from one part of a Google Sheet to another (or even between different sheets) using the __INDEX__ and __MATCH__ functions.
 published: true
-date: 2017-10-07
+date: 2017-04-01
 ---
 {% include lead.md %}
 

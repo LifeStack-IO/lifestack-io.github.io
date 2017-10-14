@@ -12,7 +12,7 @@ tags:
 category: coding
 lead: Combining __user__ and __general__ configuration to write _more flexible_ App Scripts.
 published: true
-date: 2017-10-13
+date: 2017-10-12
 ---
 {% include lead.md %}
 
@@ -44,7 +44,7 @@ The second type of configuration data is that which comes from the __users thems
 | LIVE | TRUE | Boolean | Whether the script is 'live' and sending emails, or in a testing / debug mode.
 | CC | jane.doe@example.com; archive@example.com | Array | List of addresses to CC every email to (for archive / information).
 
-The table above is a good example of how to create a __config__ tab in a spreadsheet. Even a standalone script can use this technique, provided you supply the id of the sheet holding your configuration. If you are using a sheet to host your apps script, it makes sense to keep the configuration in the same place as the user interacts with your system (to save future confusion!).
+The table above is a good example of how to create a __config__ tab in a spreadsheet. Even a [standalone script][1] can use this technique, provided you supply the id of the sheet holding your configuration. If you are using a sheet to [host your][2] apps script, it makes sense to keep the configuration in the same place as the user interacts with your system (to save future confusion!).
 
 The __type__ column helps the configuration parser to _understand_ the syntax of the value it is given. This means a string, delineated with semi-columns, can be parsed into an array as well as booleans being correctly handled as native boolean values (rather than being [coerced](https://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/)). The __description__ column helps your users understand the usage and impact of the configurable value, added essential documentation to your system.
 
@@ -120,3 +120,6 @@ function doSomething() {
 Remember that object properties/keys in javascript are case-sensitive, so stick with a casing scheme in your configuration sheet (ALL CAPS is a sensible option).
 
 [^fragility]: __Fragility__ or __robustness__ (in this case) refers to the ability of the code to tolerate change, or be susceptible to bugs caused by [inconsistent/repetitive statements](http://mhjongerius.tumblr.com/post/61853273412/the-seven-design-smells-of-rotting-software) or configuration values.
+
+  [1]: https://developers.google.com/apps-script/guides/standalone "Standalone App Scripts"
+  [2]: https://developers.google.com/apps-script/guides/bound "Container-bound App Scripts"
