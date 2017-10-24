@@ -12,7 +12,7 @@ Welcome to __LifeStack__{:.brand} We write _clear_, _helpful_ and _informative_ 
 
 ###### [{{ site.data.meta[category].name }}]({{ site.baseurl }}all/{{ category }})
 
-{% for post in posts_by_categories limit:2 %}
+{% for post in posts_by_categories limit:3 %}
 {% if forloop.first %}
 ## [ {{ post.title }} ]({{ post.url }})
 {% else %}
