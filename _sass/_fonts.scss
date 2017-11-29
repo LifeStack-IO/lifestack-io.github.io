@@ -118,6 +118,10 @@ h1, h2, h3, h4, h5, h6 {&:target {text-decoration: underline;}}
 	}
 }
 
+.center {
+	text-align: center;
+}
+
 // == Responsive Font Sizing == //
 // Weirdly, SASS likes MQ sizes to be multiplied by integers but font sizes by EMs //
 @media all {html {font-size: $font-base + $font-step * 8em; line-height: $line-height;}}

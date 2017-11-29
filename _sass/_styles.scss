@@ -23,6 +23,7 @@ figure {
 ul, ol {list-style-type: none;}
 ol {counter-reset: item;}
 ul li, ol li {
+	&+li {padding-top: 0.5rem;}
   position: relative;
 	display: block;
 	margin-left: 1em;
@@ -30,7 +31,7 @@ ul li, ol li {
 }
 ul li:before, ol li:before {
 	position: absolute;
-	left: -1em;
+	left: -1.2em;
 	color: $colour-highlight;
 }
 ol li:before {
@@ -77,22 +78,45 @@ blockquote {
 .right {float: right;}
 
 .content {
-	a {-webkit-tap-highlight-color: $colour-highlight-light;}
+	a {
+		-webkit-tap-highlight-color: $colour-highlight-light;
+		&:hover img {
+			-webkit-transition: box-shadow $transition-normal;
+			-moz-transition: box-shadow $transition-normal;
+			transition: box-shadow $transition-normal;
+			box-shadow: 0 0 0 10px lighten($colour-highlight, 50%);
+		}
+		img {
+			-webkit-transition: box-shadow $transition-out;
+			-moz-transition: box-shadow $transition-out;
+			transition: box-shadow $transition-out;
+		}
+	}
 	> p {margin-bottom: 1em;}
-	p a:hover, ul a:hover {
-		-webkit-transition: color,background-color $transition-normal;
-		-moz-transition: color,background-color $transition-normal;
-		transition: color,background-color $transition-normal;
-		background-color: $colour-highlight-light;
-		color: $colour-highlight;
+	p a, ul a {
+		&:hover {
+			-webkit-transition: color $transition-normal, background-color $transition-normal;
+			-moz-transition: color $transition-normal, background-color $transition-normal;
+			transition: color $transition-normal, background-color $transition-normal;
+			background-color: $colour-highlight-light;
+			color: $colour-highlight;
+		}
+		-webkit-transition: color $transition-normal, background-color $transition-out;
+		-moz-transition: color $transition-normal, background-color $transition-out;
+		transition: color $transition-normal, background-color $transition-out;
 	}
 	#markdown-toc {
-		a:hover {
-			-webkit-transition: color $transition-normal;
-			-moz-transition: color $transition-normal;
-			transition: color $transition-normal;
-			color: $colour-highlight;
-			background: inherit;
+		a {
+			-webkit-transition: color $transition-out;
+			-moz-transition: color $transition-out;
+			transition: color $transition-out;
+			&:hover {
+				-webkit-transition: color $transition-normal;
+				-moz-transition: color $transition-normal;
+				transition: color $transition-normal;
+				color: $colour-highlight;
+				background: inherit;	
+			}
 		}
 		li ul {
 			margin-top: 0.3em;
@@ -210,6 +234,11 @@ blockquote {
 		word-break: keep-all;
 		word-wrap: break-word;
 	}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 // -- Specific Classes -- //
 
 

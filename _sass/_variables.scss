@@ -32,8 +32,9 @@ $colour-select-dark: 					rgba($colour-emphasis, 0.1);
 $colour-select-highlight: 		rgba($colour-highlight, 0.5);
 
 /* == Transitions == */
-$transition-nav:							.3s ease-in-out;
-$transition-normal:						.2s ease-out;
+$transition-nav:							.3s ease-in;
+$transition-normal:						.2s ease-in-out;
+$transition-out:      				.5s ease-out;
 
 /* == Breakpoints == */
 $one-column:									"max-width: 32.5em";
