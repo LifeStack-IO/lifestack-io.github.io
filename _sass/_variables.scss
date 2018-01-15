@@ -18,6 +18,7 @@ $line-height:									1.5;
 
 /* == Colours == */
 $colour-background: 					#ffffff;
+$colour-alternate: 					  darken($colour-background, 2%);
 $colour-emphasis: 						#000000;
 $colour-foreground: 					lighten($colour-emphasis, 15%);
 $colour-shadow: 							rgba($colour-emphasis, 0.5);

@@ -92,7 +92,11 @@ blockquote {
 			transition: box-shadow $transition-out;
 		}
 	}
-	> p {margin-bottom: 1em;}
+	> .post-lead { padding: 1px 10px;}
+	> h6 + div.post-lead {padding-top: 0;}
+	> p, > .post-lead > p {margin-bottom: 1em;}
+	> div.post-lead:nth-of-type(even), p.post-lead:nth-of-type(even) {background: $colour-alternate;}
+	
 	p a, ul a {
 		&:hover {
 			-webkit-transition: color $transition-normal, background-color $transition-normal;

@@ -13,6 +13,11 @@ Welcome to __LifeStack__{:.brand} We write _clear_, _helpful_ and _informative_ 
 ###### [{{ site.data.meta[category].name }}]({{ site.baseurl }}all/{{ category }})
 
 {% for post in posts_by_categories limit:3 %}
+
+{::options parse_block_html="true" /}
+
+<div class="post-lead">
+
 {% if forloop.first %}
 ## [ {{ post.title }} ]({{ post.url }})
 {% else %}
@@ -30,6 +35,8 @@ Welcome to __LifeStack__{:.brand} We write _clear_, _helpful_ and _informative_ 
 
 __{{ post.date | date_to_string }}__ ► {% for tag in post.tags %}[{{tag | capitalize}}]({{ site.baseurl }}/tags/#{{ tag|slugize }}){% unless forloop.last %}, {% endunless %}{% endfor %}
 {:.finally}
+
+</div>
 
 {% endfor %}
 

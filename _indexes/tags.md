@@ -56,6 +56,7 @@ image_fallback: img/tags.png
 {% assign sorted_posts = category.items | sort: 'title' %}
 {% for post in sorted_posts %}
 [ {{ post.title }} ]({{ root_url }}{{ post.url }}){% if post.lead %} -- {{ post.lead }}{% endif %} (*{{ post.date | date: "%b, %Y" }}*{:.highlight})
+{:.post-lead}
 {% endfor %}
 
 {% endfor %}
@@ -73,12 +74,12 @@ image_fallback: img/tags.png
 
 {% if link.tags contains tag_name %}
 [{{ link.title }}]({{ link.link }}){:target="_blank"} - {% if link.lead %}{{ link.lead }}{% else %}{{ link.content | strip_html | truncatewords: 10 , "" }}{% endif %}&nbsp;[...]({{ link.url }})
+{:.post-lead}
 {% endif %}
 
 {% endfor %}
 
 {% endif %}
-
 
 <!-- Handle Snippets -->
 {% if has_snippets %}
@@ -92,6 +93,7 @@ image_fallback: img/tags.png
 
 {% if snippet.tags contains tag_name %}
 [{% if snippet.short_title %}{{ snippet.short_title }}{% else %}{{ snippet.title }}{% endif %}]({{ snippet.url }}) - {% if snippet.lead %}{{ snippet.lead }}{% else %}{{ snippet.content | strip_html | truncatewords: 10 , "" }}{% endif %}
+{:.post-lead}
 {% endif %}
 
 {% endfor %}
