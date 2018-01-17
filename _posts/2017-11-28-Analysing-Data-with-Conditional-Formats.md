@@ -11,14 +11,15 @@ tags:
 published: true
 lead: How to use _conditional formatting_ to __visually analyse data__, including non-numeric data such as grades, levels and categories.
 asset_prefix: tx3bR
+example: https://docs.google.com/spreadsheets/d/1c-sX-3PqRXBwYbavNIOjNeQL3JlWLDVl_k0PmoCZTDo/copy
 ---
 {% include lead.md %}
 
 _Visual data analysis_ is a potent tool for quickly understanding __patterns__, __trends__ and areas for __action__. In an educational context, this can be used to track __performance over time__, or as a __comparative__ tool to highlight achievement in different areas (e.g. subjects or skills).
 
-[![Example Layout]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_screen.png){:class="img-fluid"}](https://docs.google.com/spreadsheets/d/1c-sX-3PqRXBwYbavNIOjNeQL3JlWLDVl_k0PmoCZTDo/copy){:target="_new"}
+[![Example Layout]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_screen.png){:class="img-fluid"}]({{ page.example }}){:target="_new"}
 
-The example google sheet above (populated with __random__ [generated test data](https://www.generatedata.com/){:target="_new"}) is also a generic [template](https://docs.google.com/spreadsheets/d/1c-sX-3PqRXBwYbavNIOjNeQL3JlWLDVl_k0PmoCZTDo/copy){:target="_new"} that you can use right now to analyse __your own data__.
+The example google sheet above (populated with __random__ [generated test data](https://www.generatedata.com/){:target="_new"}) is also a generic [template]({{ page.example }}){:target="_new"} that you can use right now to analyse __your own data__.
 
 ## Populating with Data
 

@@ -17,9 +17,9 @@ example: https://docs.google.com/spreadsheets/d/1PJhH9mTLZUPnFDAQ3nhdpTe02c80Txz
 ---
 {% include lead.md %}
 
-[![Example Sheet]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_screen.png){:class="img-fluid"}](https://docs.google.com/spreadsheets/d/1PJhH9mTLZUPnFDAQ3nhdpTe02c80Txzg4A5dzZ4Mt6Y/copy){:target="_new"}
+[![Example Sheet]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_screen.png){:class="img-fluid"}]({{ page.example }}){:target="_new"}
 
-The example google sheet above (populated with __random__ [generated test data](https://www.generatedata.com/){:target="_new"}) is also a generic [template](https://docs.google.com/spreadsheets/d/https://docs.google.com/spreadsheets/d/1PJhH9mTLZUPnFDAQ3nhdpTe02c80Txzg4A5dzZ4Mt6Y/edit?usp=sharing/copy){:target="_new"} that you can use right now to analyse __your own data__.
+The example google sheet above (populated with __random__ [generated test data](https://www.generatedata.com/){:target="_new"}) is also a generic [template]({{ page.example }}){:target="_new"} that you can use right now to analyse __your own data__.
 
 ### Introduction
 
