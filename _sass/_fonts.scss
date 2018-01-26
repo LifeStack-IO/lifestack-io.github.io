@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-heading;
   font-weight: $font-weight-heading;
   margin: 0.6em 0 0.2em 0;
+	&.splash {color: $colour-background; background-color: $colour-emphasis; padding-left: 0.2em; padding-right: 0.2em;}
 }
 
 p {letter-spacing: 0.02rem;}
@@ -86,6 +87,7 @@ h3 {font-size: 115%};
 h2 {font-size: 125%};
 h1 {font-size: 140%};
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a {&:hover {color: $colour-highlight; strong {color: $colour-highlight-dark;}}};
+h1.splash a, h2.splash a, h3.splash a, h4.splash a, h5.splash a, h6.splash a {&:hover {color: lighten($colour-highlight, 30%);}};
 h1, h2, h3, h4, h5, h6 {&:target {text-decoration: underline;}}
 
 @media all and (unquote($one-column)) {
