@@ -145,6 +145,8 @@ blockquote {
 		}
 	}
 	> table {
+		display: block;
+		overflow: auto;
 		margin-top: 1rem;
 		margin-bottom: 1.5rem;
 		border-collapse: collapse;
