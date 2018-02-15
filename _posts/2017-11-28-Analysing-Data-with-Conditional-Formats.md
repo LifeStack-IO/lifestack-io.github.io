@@ -8,6 +8,8 @@ tags:
 - sheet
 - google
 - training
+- education
+- markbook
 published: true
 lead: How to use _conditional formatting_ to __visually analyse data__, including non-numeric data such as grades, levels and categories.
 asset_prefix: tx3bR

@@ -180,9 +180,14 @@ blockquote {
 }
 
 #markdown-toc {
-	li {list-style-type: none; padding-bottom: 0.5em;}
+	li {
+		list-style-type: none; padding-bottom: 0.25em;
+		border-bottom: dashed 1px $colour-general-light;
+		&:last-of-type {border-bottom: none;}
+	}
 	li:before {content: "";}
 	border-top: solid 0.1rem $colour-general;
+	a {padding-top: 0.25em;}
 }
 
 .finally {
