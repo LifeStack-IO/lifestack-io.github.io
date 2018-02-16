@@ -18,11 +18,11 @@ example: https://docs.google.com/spreadsheets/d/1aGo37Si2_YHmQntj4Q3fzFUtReQli-z
 
 If you collect data __regularly__ (from a Google form, or perhaps another system) then being able to monitor that data quickly is an indispensable tool to make your task a __little easier__. The sheet linked below is an __ideal__ place to start, and you can customise it to meet your needs.
 
-[![Example Logger]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_screen.png){:class="img-fluid"}]({{ page.example }}){:target="_new"}
+[![Example Monitoring Sheet]({{ site.baseurl }}/assets/{{ page.asset_prefix }}_screen.png){:class="img-fluid"}]({{ page.example }}){:target="_blank" rel="noopener"}
 
 ## Structure
 
-The example sheet itself is split into three tabs. The '__DATA__' tab contains randomly [generated test data](https://www.generatedata.com/){:target="_new"}), but you can replace this with your own data (or have your form store response data here). The '__Monitoring__' tab contains information derived completely from the other tab. Finally, the '__CONFIG__' tab allows you to customise the monitoring sheet without having to update any formulas.
+The example sheet itself is split into three tabs. The '__DATA__' tab contains randomly [generated test data](https://www.generatedata.com/){:target="_blank" rel="noopener"}), but you can replace this with your own data (or have your form store response data here). The '__Monitoring__' tab contains information derived completely from the other tab. Finally, the '__CONFIG__' tab allows you to customise the monitoring sheet without having to update any formulas.
 
 ## Features
 
