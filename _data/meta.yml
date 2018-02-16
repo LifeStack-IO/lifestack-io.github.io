@@ -73,3 +73,7 @@ networks:
 javascript:
   name: Javascript
   description: Coding with the most popular language on the web
+  
+example:
+  name: Worked Example
+  description: Includes a full example that you can use yourself, straightaway

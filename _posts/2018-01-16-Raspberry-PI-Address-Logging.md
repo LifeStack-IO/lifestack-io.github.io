@@ -1,5 +1,6 @@
 ---
 title: Logging the IP Address of your Raspberry PI to a Google Sheet
+short_title:  Raspberry PI IP Logging
 layout: post
 author:
   name: jd

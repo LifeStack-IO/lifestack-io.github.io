@@ -20,9 +20,10 @@ Welcome to __LifeStack__{:.brand} We write _clear_, _helpful_ and _informative_ 
 
 {% if forloop.first %}
 ## [ {{ post.title }} ]({{ post.url }})
-{:.splash}
+{:.splash{% if post.example %} .example{% endif %}}
 {% else %}
 ### [ {{ post.title }} ]({{ post.url }})
+{% if post.example %}{:.example}{% endif %}
 {% endif %}
 {% if post.lead %}
   {{ post.lead | strip_html }}
