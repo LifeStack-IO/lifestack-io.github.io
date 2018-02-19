@@ -1,5 +1,5 @@
 ---
-title: Running a Simple Helpdesk with Google Sheets
+title: Running a Basic Helpdesk with Google Sheets
 short_title: Helpdesk System in Sheets
 layout: post
 author:
