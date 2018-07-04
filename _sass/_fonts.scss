@@ -23,6 +23,13 @@ h1, h2, h3, h4, h5, h6 {
 	&.splash {color: $colour-background; background-color: $colour-emphasis; padding-left: 0.2em; padding-right: 0.2em;}
 }
 
+li {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.2em 0;
+    color: $colour-general-dark;
+	}
+}
+
 p {letter-spacing: 0.02rem;}
 .brand {font-size: 110%;}
 a {text-decoration: none; color: inherit;}
@@ -81,8 +88,8 @@ h6, .highlighter-rouge > .highlight > code {
 	font-size: 75%; color: $colour-general; word-break: keep-all;
 	strong {color: $colour-emphasis};
 };
-h5 {font-size: 105%};
-h4 {font-size: 110%};
+h5 {font-size: 100%};
+h4 {font-size: 105%};
 h3 {font-size: 115%};
 h2 {font-size: 125%};
 h1 {font-size: 140%};
