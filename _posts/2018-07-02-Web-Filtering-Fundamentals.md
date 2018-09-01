@@ -36,7 +36,7 @@ Instead, they both encourage schools to think beyond filtering as a '__solution_
 
 Communication networks are an abundant resource in the modern world, and a school's IT system is just one, __small part__ of a myriad of ways that pupils can connect with the broader Internet. It cannot protect everywhere, so __education__, rather than just __prohibition__, will have a far __greater impact__ on actually safeguarding children.
 
-### Basic Trade-Offs
+### Trade-Offs
 
 There are three main areas which a filtering system will need to balance. These traits tend to be __mutually exclusive__, so if you want to improve/increase performance in one area, that will cause a corresponding drop in the other areas. As with so much in technology, this is pretty much an inviolable rule - however much we may wish it weren't.
 
