@@ -1,5 +1,5 @@
 // -- General Classes -- //
-.code, .formula {
+.code, .html, .formula {
 	border: none;
 	border-radius: 0.3em;
 }
@@ -7,6 +7,10 @@
 // -- Specific Classes -- //
 .code {
 	background-color: #fafafa;
+}
+
+.html {
+  background-color: #ececec;
 }
 
 .highlight, .code {
