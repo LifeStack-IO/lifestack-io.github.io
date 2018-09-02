@@ -9,7 +9,7 @@ tags:
 - coding
 - javascript
 published: true
-lead: Displaying Google Calendar events on the web, a __simple diary banner__ for your site.
+lead: Displaying Google Calendar events on the web, with this __simple diary banner__ for your site.
 asset_prefix: hn89a
 ---
 {% include lead.md %}

@@ -23,7 +23,7 @@ figure {
 ul, ol {list-style-type: none;}
 ol {counter-reset: item;}
 ul li, ol li {
-	&+li {padding-top: 0.5rem;}
+	&+li {margin-top: 1rem;}
   position: relative;
 	display: block;
 	margin-left: 1em;
@@ -122,6 +122,9 @@ blockquote {
 				background: inherit;	
 			}
 		}
+    li {
+			&+li {margin-top: 0.6rem;}
+    }
 		li ul {
 			margin-top: 0.3em;
 			> li {color: $colour-general;}
