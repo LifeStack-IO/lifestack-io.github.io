@@ -23,6 +23,12 @@ This is a __common sense guide__ to protecting data, with a particular focus on 
 
 While __Google Drive__ is likely going to be the most __secure option__ for most organisations, many of these principles will apply to other cloud storage systems too. Why is it __so secure__? Read on to find out ...
 
++ Google [encrypts][27]{:target="_blank" rel="noopener"} your data in when it is on the move (in transit) and when stored (at rest)
++ Supports 2-Factor authentication, which is essential to help protect your accounts
++ Wide device support and allows remote data/account removal on secure devices (e.g. tablets, phones, Chromebooks)
++ Allows simple sharing rather than relying on emailing files as attachments
++ Robust and straightforward auditing and logging, to see who has accessed data
+
 ## Security
 
 We are taking information security to mean how __well protected__ your data is from __unauthorised access__ and __disclosure__. Typically the potential risks are your information storage system (servers, laptops, databases etc.) being broken into or your credentials being impersonated/stolen to gain access to your systems.
@@ -124,3 +130,4 @@ Well-designed cloud services will likely have significantly less downtime that t
   [24]: https://support.google.com/a/answer/4579696 "Drive audit log"
   [25]: https://support.google.com/drive/answer/2494822 "Share files from Google Drive"
   [26]: https://myaccount.google.com/device-activity "Recently Used Devices"
+  [27]: https://support.google.com/googlecloud/answer/6056693 "Does Google encrypt my data?"

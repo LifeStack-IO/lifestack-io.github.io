@@ -20,10 +20,20 @@ figure {
 	word-wrap: unset;
 }
 
-ul, ol {list-style-type: none;}
+ul, ol {
+  list-style-type: none;
+  &.condensed {
+    li {
+      > ul li, ol li {margin-top: 0.1rem !important;}
+    }
+  }
+}
 ol {counter-reset: item;}
 ul li, ol li {
 	&+li {margin-top: 1rem;}
+  > ul li, ol li {
+    &:before {color: $colour-highlight-lighter;}
+  }
   position: relative;
 	display: block;
 	margin-left: 1em;
@@ -263,6 +273,58 @@ blockquote {
   height: auto;
 }
 // -- Specific Classes -- //
+
+// -- Tags -- //
+.badge {
+  user-select: none;
+  margin-left: .25rem !important;
+  margin-right: .25rem !important;
+  display: inline-block;
+  padding: 4px 5px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  color: #fff;
+  background-color: #6c757d;
+  &.high {
+    color: #fff !important;
+  	background-color: #dc3545 !important;
+  }
+  &.medium {
+    color: #212529 !important;
+  	background-color: #ffc107 !important;
+  }
+  &.low {
+    color: #fff !important;
+  	background-color: #28a745 !important;
+  }
+  &.none {
+    color: #fff !important;
+  	background-color: #17a2b8 !important;
+  }
+  &.review {
+    color: #fff !important;
+  	background-color: #343a40 !important;
+  }
+  &.reviewed {
+    color: #212529 !important;
+  	background-color: #f8f9fa !important;
+  }
+  &.highlight {
+    color: #000 !important;
+  	background-color: #ffff00 !important;
+  }
+  &.tag {
+    color: #fff !important;
+  	background-color: #000 !important;
+  }
+}
+
+
+// -- Tags -- //
 
 
 // == One Column Small Layout == //
