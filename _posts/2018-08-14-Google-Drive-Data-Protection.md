@@ -17,7 +17,7 @@ asset_prefix: lkp11k
 
 ## Introduction
 
-[Perfect security][1]{:target="_blank" rel="noopener"} doesn't exist, but __better__ security does. Better data protection means [thinking pragmatically][2]{:target="_blank" rel="noopener"} about the likely threats that you face, and then doing something to mitigate the chances of them happening.
+[Perfect security][1]{:target="_blank" rel="noopener"} doesn't exist, but __better__ security does. Better data protection means [thinking pragmatically][2]{:target="_blank" rel="noopener"} about the [likely threats][28]{:target="_blank" rel="noopener"} that you face, and then doing something to mitigate the chances of them happening.
 
 This is a __common sense guide__ to protecting data, with a particular focus on the challenges faced in education. It is structured around using [Google Drive][3]{:target="_blank" rel="noopener"} to protect your data, as part of the [G-Suite][4]{:target="_blank" rel="noopener"} for [Business][5]{:target="_blank" rel="noopener"} (Basic, Business or Enterprise), [Non-Profit][6]{:target="_blank" rel="noopener"} or [Education][7]{:target="_blank" rel="noopener"} plans.
 
@@ -131,3 +131,4 @@ Well-designed cloud services will likely have significantly less downtime that t
   [25]: https://support.google.com/drive/answer/2494822 "Share files from Google Drive"
   [26]: https://myaccount.google.com/device-activity "Recently Used Devices"
   [27]: https://support.google.com/googlecloud/answer/6056693 "Does Google encrypt my data?"
+  [28]: https://www.theregister.co.uk/2018/09/04/cckup_over_conspiracy_tops_selfreported_data_breaches/ "Cock-ups, rather than conspiracies, top self-reported data breaches"
