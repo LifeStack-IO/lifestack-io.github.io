@@ -199,7 +199,7 @@ The script for this hook should be as follows:
 {% highlight bash %}
 if $if_up; then
     url="{% raw %}{{ YOUR WEB APP URL HERE }}{% endraw %}?name={% raw %}{{ YOUR RASPBERRY PI NAME HERE }}{% endraw %}&interface=$interface&ipaddress=$new_ip_address&ssid=$ifssid"
-    wget "$url"
+    wget --retry-connrefused --tries=5 --output-document=- --background --no-cache --quiet "$url"
 fi
 {% endhighlight %}{:class="code"}
 
