@@ -32,9 +32,35 @@ There are a plethora of [excellent guides][3] to help you get your PI to automat
 
 Alternatively, you could assign a _static IP address_ to your device, but this is a pain if you need to connect to multiple networks or operate in an environment where you don't have full control of the _IP Addressing Space_ (e.g. at work). You can also use a dynamic DNS registration service, but this will only give you the external IP address (e.g. Internet faced) of your device, which isn't much use if you need to connect to it locally. Finally, reserved IP addresses in DHCP could be used, but again, this requires having full access to the network and means extra work to maintain and document! Dynamically assigned DHCP addresses are accessible and convenient, and this post documents an easy way to log them every time your PIs boot up, regardless of where they are in the world!
 
-    Interface Config
+### Interface Config
+
+    Raspbian Stretch
     
-The __/etc/network/interfaces__ file contains the overall network interface configuration, and in turn, this points to the __wpa supplicant__ configuration file to define the _wireless networks_ that the PI will connect to.
+On __later versions__ of Raspbian/Debian (beginning with stretch) network configuration and hooking up the _wpa configuration_ is handled automatically by __dhcpd__. You can, therefore, skip straight to wireless configuration below. In fact, if you end up configuring the interfaces in __/etc/network/interfaces__ as well it can have seemingly __unpredictable results__, so steer well clear! On a home network, you may wish to speed up the address assignment process by disabling ARP probing.
+
+To do this, type the following:
+{% highlight bash %}
+sudo nano /etc/dhcpcd.conf
+{% endhighlight %}
+
+And add the following line:
+{% highlight javascript %}
+noarp
+{% endhighlight %}
+
+If you are using a different type of OS/board, e.g. an Asus TinkerBoard running Tinker OS (stretch) then you may find that the WPA configuration is not handled by default by __dhcpd__. In this case you may need to create you own DHCP hook to handle this.
+
+To do this, type the following:
+{% highlight bash %}
+sudo touch /lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant
+sudo nano /lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant
+{% endhighlight %}
+
+Then copy and paste in the script from the [Raspberry Pi repository](https://github.com/raspberrypi-ui/dhcpcd-6.7.1/blob/master/dhcpcd-hooks/10-wpa_supplicant){:target="_blank" rel="noopener"}.
+
+    Raspbian Jesse
+    
+If you are using earlier versions then the __/etc/network/interfaces__ file contains the overall network interface configuration, and in turn, this points to the __wpa supplicant__ configuration file to define the _wireless networks_ that the PI will connect to.
 
 To edit this file, type the following:
 {% highlight bash %}
@@ -48,17 +74,21 @@ source-directory /etc/network/interfaces.d
 auto lo
 iface lo inet loopback
 
-iface eth0 inet manual
+auto eth0
+iface eth0 inet dhcp
 
 allow-hotplug wlan0
-iface wlan0 inet manual
+auto wlan0
+iface wlan0 inet dhcp
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-iface default inet dhcp
 
+auto wlan1
 allow-hotplug wlan1
-iface wlan1 inet manual
+iface wlan1 inet dhcp
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 {% endhighlight %}{:class="code"}
+
+### Wireless Config
 
 The __/etc/wpa_supplicant/wpa_supplicant.conf__ file will contain a network definition for each wireless network that you would like your PI to be able to connect to (your home network, work network, coffee shop network etc.)
 
