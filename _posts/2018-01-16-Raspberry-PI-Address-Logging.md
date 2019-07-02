@@ -13,6 +13,7 @@ published: true
 lead: How to get your Raspberry PI to log it's assigned IP Address to a Google Sheet every time it boots up!
 asset_prefix: mn2HH
 example: https://docs.google.com/spreadsheets/d/1SaIUcW-N42scibbCjmsk_fK1QC-VEY7bK3SL8AA9i5A/copy
+updated: 2018-09-25
 ---
 {% include lead.md %}
 

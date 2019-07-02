@@ -21,6 +21,7 @@ $colour-background: 					#ffffff;
 $colour-alternate: 					  darken($colour-background, 2%);
 $colour-emphasis: 						#000000;
 $colour-foreground: 					lighten($colour-emphasis, 15%);
+$colour-foreground-light: 		lighten($colour-emphasis, 20%);
 $colour-shadow: 							rgba($colour-emphasis, 0.5);
 $colour-general:							#767676;
 $colour-general-light:				lighten($colour-general, 40%);

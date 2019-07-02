@@ -43,7 +43,7 @@ baseurl:							""
 author:
   name:								"LifeStack.io"
   url:								https://github.com/LifeStack-IO
-fonts:								"Alegreya:400,400i,700,700i|Baumans|Inconsolata:400,700|Raleway:400,700"
+fonts:								"Alegreya:400,400i,500,700|Baumans|Inconsolata:400,700|Raleway:400,700"
 
 # Collections
 collections:

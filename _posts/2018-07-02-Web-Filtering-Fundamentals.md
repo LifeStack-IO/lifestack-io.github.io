@@ -20,7 +20,7 @@ We should begin with what __should__ be obvious, but is often 'clouded' by marke
 
 > There is __no such thing__ as a perfect web filter.
 
-Expanding this statement even further, web filters __aren't really that much better__ than each other (despite what their makers may say!). What they may be, though, is __better suited__ to your particular needs and environment. By understanding the fundamentals of how this technology works, and the balance of trade-offs each type of filter requires, you can make an informed choice.
+Expanding this statement even further, web filters __aren't really that much better__ than each other (despite what their makers may say!). What they may be, though, is __better suited__ to your particular needs and environment. By understanding the fundamentals of how this technology works, a [little history](https://tedium.co/2018/12/06/internet-content-filters-history/){:target="_blank" rel="noopener"} and the balance of trade-offs each type of filter requires, you can make an informed choice.
 
 With __yearly filtering costs__ ranging (for a typically sized organisation, like a secondary school) from about £/$/€ 1,000 to __tens of thousands__ (and growing!), your choice needs to help deliver both a suitable service and value for money.
 

@@ -102,9 +102,21 @@ blockquote {
 			transition: box-shadow $transition-out;
 		}
 	}
-	> .post-lead { padding: 1px 10px;}
+	> .post-lead {
+    padding: 1px 10px;
+    margin-bottom: 10px;
+    &.first {border-bottom: 3px double $colour-general-light;}
+    .finally {text-align: right;}
+  }
 	> h6 + div.post-lead {padding-top: 0;}
-	> p, > .post-lead > p {margin-bottom: 1em;}
+	> p, > .post-lead p {margin-bottom: 0.6em;}
+  > .post-lead p, > p.post-lead {
+    color: $colour-foreground;
+    strong {font-weight: 500;}
+    a {color: $colour-emphasis;}
+  }
+  > p.post-lead {margin-bottom: 1em;}
+  > .post-lead > .post-content p {margin-left: 10px;}
 	> div.post-lead:nth-of-type(even), p.post-lead:nth-of-type(even) {background: $colour-alternate;}
 	
 	p a, ul a {
@@ -200,6 +212,7 @@ blockquote {
 		content: "★";
 		display: inline-block;
 		position: relative;
+    opacity: 0.6;
 	}
 }
 

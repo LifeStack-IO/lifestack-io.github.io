@@ -1,7 +1,7 @@
 ---
 label: snippets
 layout: post
-title: Cleaning Browser Auth Cookies at Mac OS X log off
+title: Clean Browser Cookies at Mac OS X log off
 short_title: Mac Log Off Clearing Script
 author:
   name: jd

@@ -16,7 +16,7 @@
 		<style type="text/css">{% capture include_to_scssify %}{% include style.scss %}{% endcapture %}{{ include_to_scssify | scssify }}</style>
 		
 		<!-- Async CSS -->
-		<link rel="preload" href="https://fonts.googleapis.com/css?family={{ site.fonts }}" as="style" onload="this.rel='stylesheet'">
+		<link rel="preload" href="https://fonts.googleapis.com/css?family={{ site.fonts }}&display=swap" as="style" onload="this.rel='stylesheet'">
 
 		<noscript>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ site.fonts }}">

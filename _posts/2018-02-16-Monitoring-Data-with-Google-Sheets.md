@@ -28,7 +28,7 @@ The example sheet itself is split into three tabs. The '__DATA__' tab contains r
 
 ### Auto-Populating Headers
 
-The names on the left-hand-side are __automatically pulled__ from the data tab itself. Likewise, the week numbers (and associated start & end dates for these weeks) are also __drawn dynamically __from the data. This saves you the __hassle__ of having to pre-populate these column headers. You can re-use these monitoring sheets every year, and the dates will stay current. Week numbers starting from the first date in your dataset (e.g. the first week of a school term) are particularly useful for __keeping track__ as the year progresses.
+The names on the left-hand-side are __automatically pulled__ from the data tab itself. Likewise, the week numbers (and associated start & end dates for these weeks) are also __drawn dynamically __ from the data. This saves you the __hassle__ of having to pre-populate these column headers. You can re-use these monitoring sheets every year, and the dates will stay current. Week numbers starting from the first date in your dataset (e.g. the first week of a school term) are particularly useful for __keeping track__ as the year progresses.
 
 ### Summary Counts
 
