@@ -63,10 +63,14 @@ hr {
 		content: "◄ ♥ ►";
 		display: inline-block;
 		position: relative;
-		top: -0.8em;
-		padding: 0 0.3em;
+		top: -0.75em;
+		padding: 0 0.5em;
 		color: $colour-highlight;
 		background: $colour-background;
+    letter-spacing: -0.05em;
+    margin: -0.1em;
+    white-space: nowrap;
+    word-break: keep-all;
 	}
 }
 
