@@ -44,19 +44,19 @@ We now need to turn this into our de-normalised rows, __one row__ for each __nam
 The first of these formulas will duplicate the names so that there are multiple rows (matching the number of subjects in column C) for each name. We start with the second row (A2:A) because the first row contains our column headings.
 
 {% highlight puppet %}
-ARRAYFORMULA(TRANSPOSE(SPLIT(CONCATENATE(ARRAYFORMULA(SPLIT(REPT(FILTER(A2:A, Input!A2:A <> "")&"✏", COUNTIF(C2:C, "<>")),"✏"))&"✏"),"✏")))
+ARRAYFORMULA(TRANSPOSE(SPLIT(CONCATENATE(ARRAYFORMULA(SPLIT(REPT(FILTER(A2:A, A2:A <> "")&"✏", COUNTIF(C2:C, "<>")),"✏"))&"✏"),"✏")))
 {% endhighlight %}{:class="formula"}
 
 To pull across the group codes for each name, we could use a similar formula, or we could fall back to using a simple [index/match]({{ site.baseurl }}{% link _snippets/google_sheet_index_match.md %}) approach (here we are assuming the output data begins on column E).
 
 {% highlight puppet %}
-IF(LEN(E2)>0,INDEX(Input!B:B,MATCH(A2,Input!A:A,0),1),)
+IF(LEN(E2)>0,INDEX(B:B,MATCH(E2,A:A,0),1),)
 {% endhighlight %}{:class="formula"}
 
 Finally, we use a similar formula to above to create the list of subjects. But, instead of being the same value repeated a certain number of times, it is the entire list of subjects, repeated for each name.
 
 {% highlight puppet %}
-TRANSPOSE(ARRAYFORMULA(SPLIT(CONCATENATE(TRANSPOSE(ARRAYFORMULA(SPLIT(REPT(FILTER(C2:C, D2:D <> "")&"✏", COUNTIF(A2:A, "<>")),"✏")))&"✏"),"✏")))
+TRANSPOSE(ARRAYFORMULA(SPLIT(CONCATENATE(TRANSPOSE(ARRAYFORMULA(SPLIT(REPT(FILTER(C2:C, C2:C <> "")&"✏", COUNTIF(A2:A, "<>")),"✏")))&"✏"),"✏")))
 {% endhighlight %}{:class="formula"}
 
 ### Output Rows
