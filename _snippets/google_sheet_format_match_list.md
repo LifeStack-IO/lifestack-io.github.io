@@ -1,7 +1,7 @@
 ---
 label: snippets
 layout: post
-title: Format values based on whether they appearance in another column
+title: Format values based on whether they appear in another column
 short_title: __HIGHLIGHT__ List Matches
 author:
   name: jd
